@@ -104,7 +104,7 @@ button:focus{
 .header--bg{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
-    background: url("../../assets/images/header-background.png") no-repeat;
+    background: url("../../assets/images/header-background.jpg") no-repeat;
     height: 800px;
     position: relative;
     background-size: cover;
@@ -413,7 +413,7 @@ button:focus{
 .contact--bg{
     -webkit-clip-path: polygon(0 32%, 100% 10%, 100% 100%, 0% 100%);
             clip-path: polygon(0 32%, 100% 10%, 100% 100%, 0% 100%);
-    background: url("../../assets/images/contact-us-background.png") no-repeat;
+    background: url("../../assets/images/contact-us-background.jpg") no-repeat;
     height: 430px;
     position: relative;
     background-size: cover;
@@ -501,7 +501,7 @@ button:focus{
 .letsGo--bg{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
-    background: url("../../assets/images/letsGo-background.png") no-repeat;
+    background: url("../../assets/images/letsGo-background.jpg") no-repeat;
     height: 440px;
     position: relative;
     background-size: cover;
@@ -570,7 +570,7 @@ button:focus{
 .video-section--bg{
     -webkit-clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);
             clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);
-    background: url("../../assets/images/handshake-background.png") no-repeat;
+    background: url("../../assets/images/handshake-background.jpg") no-repeat;
     height: 490px;
     position: relative;
     background-size: cover;
@@ -743,7 +743,7 @@ button:focus{
 .overview--bg{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-    background: url("../../assets/images/overview-background.png") no-repeat;
+    background: url("../../assets/images/overview-background.jpg") no-repeat;
     height: 360px;
     position: relative;
     background-size: cover;
@@ -1173,4 +1173,17 @@ button:focus{
     position:relative;
   }
   
+}
+
+
+.grow { animation: growing 2s infinite ease-in-out; }
+
+
+@keyframes growing {
+
+
+50% {transform:scale(1.1)}
+
+100% {transform:scale(1.0)}
+
 }
