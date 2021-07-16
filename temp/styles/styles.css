@@ -90,13 +90,16 @@ button:focus{
 .container{
     width:600px;
     margin: 0 auto;
+
 }}
 
 @media (min-width: 992px) {
 .container{
     width:720px;
     margin: 0 auto;
-}}
+}
+.mobline {display:none}
+}
 
 @media (min-width: 1200px) {
 .container{
@@ -149,9 +152,9 @@ button:focus{
 
 .header__content__title{
     font-size: 50px;
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 25px;
   }
 
@@ -1249,5 +1252,35 @@ button:focus{
   
   }
 
+  .logocontainer {
+    top:-20px;
+    position:relative !important;
+
+  }
+
+  .logopic {
+    width:200px
+  }
+
+  @media (min-width: 450px) {
 
 
+    .logopic {
+      width:280px
+    }
+
+  }
+
+  #prem {
+ }
+
+  #budg {font-family: Comic Sans MS;
+  font-weight:100}
+
+.lottolol {
+  width:50px;
+  height:50px;
+  right:2px;
+  position:relative;
+  display:inline-block;
+}
