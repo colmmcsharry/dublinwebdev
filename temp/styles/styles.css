@@ -1187,3 +1187,64 @@ button:focus{
 100% {transform:scale(1.0)}
 
 }
+
+.pull-right {
+  position:relative;
+  top:15px;
+}
+
+#thinking {
+  padding:0px 20px;
+  margin-bottom:90px;
+}
+
+
+.aboutpar {display:block}
+
+.abouth2 {
+  text-align:center;
+  margin-bottom:100px;
+}
+
+.rightcontent {
+  padding:50px 10vw;
+  font-size:16px !important;
+}
+
+.about {margin: 150px 0px}
+
+
+
+
+.lotto {
+  width:270px;
+  margin: auto
+}
+
+@media (min-width: 1000px) {
+
+  .mycontainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lotto {
+    width:500px;
+  }
+  
+  .aboutpar {
+    display:inline-block;
+    
+  }
+ 
+  #thinking {
+    position:relative;
+    left:-120px;
+    top:60px;
+  }
+  
+  
+  }
+
+
+
