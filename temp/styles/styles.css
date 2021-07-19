@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 
 :root {
   --bgblue:linear-gradient(to bottom,rgb(147,197,253,0.9),rgb(37,99,235,0.9)); 
-  --oldbglue: rgba(5, 180, 249, .9)
+  --classyblue:linear-gradient(to top, rgba(146, 168, 241, 0.9), rgba(95, 124, 218, 0.9));
+
 }
 
 
@@ -76,9 +79,9 @@ button:focus{
 }
 
 .main-wrapper{
-  width: 1600px;
-  margin: 0 auto;
+  width: 100vw;
 }
+
 
 @media (max-width: 1599px) {
 .main-wrapper{
@@ -107,13 +110,18 @@ button:focus{
     margin: 0 auto;
 }}
 
+
+
+
+
 .header--bg{
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
-    background: url("../../assets/images/header-background.jpg") no-repeat;
-    height: 800px;
+
+    background: url("https://www.industrytap.com/wp-content/uploads/2016/05/ipad-laptop-phone.jpg") no-repeat;
     position: relative;
+    height:100vh;
     background-size: cover;
+    z-index:1;
+
   }
 
 .header--bg:after{
@@ -125,13 +133,17 @@ button:focus{
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: var(--bgblue);
-    z-index: -1;
+    background-image: var(--classyblue);
+
+
+    /* background-color: rgba(95, 124, 218, 0.7); */
+    z-index: -2;
   }
 
 .header .navbar{
     padding-top: 30px;
     margin-bottom: 200px;
+   
   }
 
 @media screen and (max-width: 450px) {
@@ -156,10 +168,11 @@ button:focus{
     color: #fff;
     letter-spacing: 3px;
     margin-bottom: 25px;
+    font-family: 'Kaushan Script', cursive;
   }
 
 .header__content__paragraph{
-    font-size: 16px;
+    font-size: 18px;
     color: #f8f8f8;
     max-width: 530px;
     margin-right: auto;
@@ -173,8 +186,20 @@ button:focus{
     color: #fff;
   } */
 
+  .navlink {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0) !important;
+    transition: text-decoration-color 300ms !important;
+  }
+  
+  .navlink:hover {
+    text-decoration-color: rgba(255, 255, 255, 1) !important;
+  }
+
+
+
+
 .navlink:hover {
-  color:red !important;
+  background-color:transparent !important;
 }
 
 .navbar-header button{
@@ -240,7 +265,7 @@ button:focus{
     border-radius: 30px;
     font-size: 16px;
     display: inline-block;
-    background-color: #00AAFE;
+    background-color: rgb(128, 173, 240);
     color: #fff;
     -webkit-box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
             box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
@@ -248,6 +273,7 @@ button:focus{
 
 .button--light:hover{
       color: #fff;
+      background-color: rgb(178, 208, 243);
     }
 
 .button--margin-right{
@@ -279,13 +305,13 @@ button:focus{
     }
 
 .service .thumbnail:hover .service__title{
-        color: #00aafe;
+        color: rgba(95, 124, 218)
       }
 
 .service .thumbnail:hover .material-icons{
-        background-color: rgb( 0, 170, 254 );
-        -webkit-box-shadow: 0px 0px 15px 0px rgb( 0, 170, 254 );
-                box-shadow: 0px 0px 15px 0px rgb( 0, 170, 254 );
+        background-color: rgba(95, 124, 218)
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(95, 124, 218);
+                box-shadow: 0px 0px 15px 0px rgba(95, 124, 218);
         color: #fff;
       }
 
@@ -301,8 +327,8 @@ button:focus{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: rgb( 235, 248, 255 );
-    color: rgb( 0, 170, 254 );
+    background-color: rgba(203, 212, 241, 0.863);
+    color: rgb(105, 134, 230);
     font-size: 30px;
     line-height: 0.933;
     line-height: 2.3;
@@ -362,10 +388,6 @@ button:focus{
   }
     }
 
-.page-section--small{
-    padding-top: 50px;
-    padding-bottom: 140px;
-  }
 
 .page-section--less-b-padding{
     padding-bottom: 80px;
@@ -417,18 +439,18 @@ button:focus{
     }
 
 .contact--bg{
-    -webkit-clip-path: polygon(0 32%, 100% 10%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 32%, 100% 10%, 100% 100%, 0% 100%);
-    background: url("../../assets/images/contact-us-background.jpg") no-repeat;
+   
+
     height: 430px;
     position: relative;
     background-size: cover;
+    display:grid;
+    align-content: center;
   }
 
 @media screen and (max-width: 1198px) {
       .contact--bg{
-        -webkit-clip-path: polygon(0 32%, 100% 15%, 100% 100%, 0% 100%);
-                clip-path: polygon(0 32%, 100% 15%, 100% 100%, 0% 100%);
+        
       }
     }
 
@@ -440,8 +462,7 @@ button:focus{
 
 @media screen and (max-width: 670px) {
       .contact--bg{
-        -webkit-clip-path: polygon(0 32%, 100% 28%, 100% 100%, 0% 100%);
-                clip-path: polygon(0 32%, 100% 28%, 100% 100%, 0% 100%);
+       
       }
     }
 
@@ -454,7 +475,8 @@ button:focus{
       right: 0;
       top: 0;
       bottom: 0;
-      background-image: var(--bgblue);
+      background-size:contain;
+      background-image: linear-gradient(to bottom, #6a93cb 0%, #a4bfef 74%);
       z-index: -1;
     }
 
@@ -505,9 +527,7 @@ button:focus{
 }
 
 .letsGo--bg{
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
-    background: url("../../assets/images/letsGo-background.jpg") no-repeat;
+
     height: 440px;
     position: relative;
     background-size: cover;
@@ -515,8 +535,7 @@ button:focus{
 
 @media screen and (max-width: 430px) {
       .letsGo--bg{
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+
       }
     }
 
@@ -529,7 +548,7 @@ button:focus{
       right: 0;
       top: 0;
       bottom: 0;
-      background-image: var(--bgblue);
+      background-image: var(--classyblue);
       z-index: -1;
     }
 
@@ -574,18 +593,17 @@ button:focus{
 }
 
 .video-section--bg{
-    -webkit-clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);
-            clip-path: polygon(0 30%, 100% 5%, 100% 100%, 0 100%);
-    background: url("../../assets/images/handshake-background.jpg") no-repeat;
+
+    background: url("https://igeotex.fr/wp-content/uploads/2017/07/IMG_Offre_Emploi.jpg") no-repeat;
     height: 490px;
     position: relative;
     background-size: cover;
+    z-index:-2;
   }
 
 @media screen and (max-width: 1198px) {
       .video-section--bg{
-        -webkit-clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);
-                clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);
+
       }
     }
 
@@ -597,8 +615,7 @@ button:focus{
 
 @media screen and (max-width: 600px) {
       .video-section--bg{
-        -webkit-clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0 100%);
-                clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0 100%);
+
         background-position: center center;
       }
     }
@@ -612,7 +629,7 @@ button:focus{
       right: 0;
       top: 0;
       bottom: 0;
-      background-image: var(--bgblue);
+      background-image: var(--classyblue);
       z-index: -1;
     }
 
@@ -662,10 +679,10 @@ button:focus{
     border: 0;
   }
 
-.team .thumbnail:hover .team__caption{
+/* .team .thumbnail:hover .team__caption{
       -webkit-box-shadow: 2.5px 4.33px 20px 0px rgba(133, 129, 129, 0.27);
               box-shadow: 2.5px 4.33px 20px 0px rgba(133, 129, 129, 0.27);
-    }
+    } */
 
 .team__name{
     font-size: 20px;
@@ -723,7 +740,7 @@ button:focus{
   }
 
 .price .panel:hover{
-    background-color: #13BDFF;
+    background-color: #98c1f7;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
     margin-top: -50px;
@@ -747,9 +764,6 @@ button:focus{
     }
 
 .overview--bg{
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-    background: url("../../assets/images/overview-background.jpg") no-repeat;
     height: 360px;
     position: relative;
     background-size: cover;
@@ -764,15 +778,13 @@ button:focus{
 @media screen and (max-width: 900px) {
       .overview--bg{
         height: auto;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+       
       }
     }
 
 @media screen and (max-width: 607px) {
       .overview--bg{
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+
       }
     }
 
@@ -785,7 +797,7 @@ button:focus{
       right: 0;
       top: 0;
       bottom: 0;
-      background-image: var(--bgblue);
+      background-image: var(--classyblue);
       z-index: -1;
     }
 
@@ -857,7 +869,7 @@ button:focus{
             box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.08);
     font-size: 22px;
     line-height: 2.8;
-    border-radius: 50%;
+    border-radius: 50px;
     text-shadow: none;
   }
 
@@ -915,8 +927,7 @@ button:focus{
     }
 
 .contact-two--bg{
-    -webkit-clip-path: polygon(0 40%, 100% 5%, 100% 100%, 0 100%);
-            clip-path: polygon(0 40%, 100% 5%, 100% 100%, 0 100%);
+
     height: 350px;
     position: relative;
   }
@@ -930,7 +941,7 @@ button:focus{
       right: 0;
       top: 0;
       bottom: 0;
-      background-image: var(--bgblue);
+      background-image: var(--classyblue);
       z-index: -1;
     }
 
@@ -971,7 +982,7 @@ button:focus{
   }
 
 .blog__paragraph{
-    font-size: 14px;
+    font-size: 16px;
     color: #7d7d7d;
   }
 
@@ -996,8 +1007,6 @@ button:focus{
 }
 
 .footer--bg{
-    -webkit-clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0 100%);
-            clip-path: polygon(0 17%, 100% 0%, 100% 100%, 0 100%);
     height: 650px;
     position: relative;
   }
@@ -1010,8 +1019,7 @@ button:focus{
 
 @media screen and (max-width: 991px) {
       .footer--bg{
-        -webkit-clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0 100%);
-                clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0 100%);
+
       }
     }
 
@@ -1024,7 +1032,9 @@ button:focus{
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: #001F37;
+      background-image: var(--classyblue);
+      filter: brightness(0.5) ;
+transform:scaleY(-1);
       z-index: -1;
     }
 
@@ -1265,6 +1275,7 @@ button:focus{
   @media (min-width: 450px) {
 
 
+
     .logopic {
       width:280px
     }
@@ -1280,7 +1291,346 @@ button:focus{
 .lottolol {
   width:50px;
   height:50px;
-  right:2px;
+  left:2px;
   position:relative;
   display:inline-block;
+}
+
+
+
+
+/* wavy section */
+.custom-shape-divider-bottom-1626693409 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626693409 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 26px;
+}
+
+.custom-shape-divider-bottom-1626693409 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+
+@media (max-width: 450px) {
+  .header__content  {
+    transform:scale(0.9);
+    position:relative;
+    top:-80px;
+  }
+
+}
+
+@media (max-width: 330px) {
+  .header__content {
+top:-130px;
+transform:scale(0.85);
+
+  }
+}
+
+
+
+
+
+
+
+
+.custom-shape-divider-top-1626701600 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1626701600 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+
+.custom-shape-divider-top-1626701600 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.slider__image {
+width: 150px;
+  border-radius:50%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS FOR PROJECTS BEGINS*/
+
+
+
+.My-Projects {margin-top: 15rem;
+  font-size:4rem;
+  color:$cyan;
+  font-family:  Dancing Script, cursive, Snell Roundhand;
+  }
+  
+  
+  #projwrap {display:block;
+   text-align:center; 
+  }
+  
+  
+  .projtitle {
+  padding: 30px;
+  font-family:  Roboto;
+  color:#556a87;
+  font-size:2rem;
+  }
+  
+  #gridwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    text-align: left;
+    align-items:center;
+    padding:2rem;
+    padding-left:6vw;
+    padding-right:6vw;
+  }
+  
+  #right {
+  
+    position:relative;
+    align-items:center;
+  }
+  
+  .devices {height:100%;
+  width:100%;
+  top:0px;
+  left:2px;
+  position:relative;
+  }
+  
+  .inner {position:absolute;
+    left:12%;
+    top:8%;
+  height:60%;
+  width:72%;
+  }
+  
+  
+  
+  .ipad {
+    position:absolute;
+    right:3%;
+    bottom:10%;
+  height:53%;
+  width:27%;
+  object-fit:cover; 
+  object-position:center center;
+  }
+  
+  .phone {
+    position:absolute;
+      left:4%;
+    bottom:11%;
+    object-fit:cover; 
+  object-position: center center;  
+    width: 14%;
+    height:36%;
+  }
+  
+  .ipadwrapper{}
+  .innerwrapper {}
+  .phonewrapper {}
+  
+  
+  .inner, .phone, .ipad {
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 9.6s;
+ }
+  .inner:nth-of-type(1), .phone:nth-of-type(1), .ipad:nth-of-type(1) {
+    animation-delay: 7.2s;
+ }
+  .inner:nth-of-type(2), .phone:nth-of-type(2), .ipad:nth-of-type(2) {
+    animation-delay: 4.8s;
+ }
+  .inner:nth-of-type(3), .phone:nth-of-type(3), .ipad:nth-of-type(3) {
+    animation-delay: 2.4s;
+ }
+  .inner:nth-of-type(4), .phone:nth-of-type(4), .ipad:nth-of-type(4) {
+    animation-delay: 0;
+ }
+  
+  
+  
+  
+  /*CSS FOR NEW PROJECTS ENDS*/
+  
+  /*image transitions for my website previews starts*/
+  
+  
+  
+  
+  
+  @keyframes multiple-image-crossfade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  /*image transitions ends*/
+  
+  
+  
+@media screen and (max-width: 850px) {
+
+  #gridwrapper {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+  grid-gap:0px;
+    text-align: left;
+    align-items:center;
+    padding:3rem;
+    padding-left:6vw;
+    padding-right:2vw;
+  }
+}
+
+
+
+  
+  
+  
+  @media screen and (max-width: 520px) {
+
+  #gridwrapper{padding:0 3vw;
+    font-size:1.1rem;
+  }
+
+  
+  #gridwrapper  {
+    padding-left:0vw;
+  padding-right:0vw;
+    display:block;}
+}
+
+
+
+
+
+
+
+
+.projdesc {
+  font-size:15px;
+  text-align:center;
+
+}
+
+.workh2 {text-align:center;
+margin-top:150px;}
+
+.projmore {
+  margin: 70px auto;
+  background-color: rgb(128, 173, 240);
+}
+
+
+.myshot {
+  border-radius:50%;
+}
+
+.tidbithead {font-size:35px !important;
+  font-family:Roboto, sans serif;
+  font-weight:700;
+color:white;}
+
+.tidbit {
+  color: white;
+  font-family:Roboto-Light;
+  font-size:16px;
+  width:800px;
+  text-align:left;
+  margin:0 auto;
+}
+
+
+
+
+@media screen and (min-width: 1100px) {
+
+
+  .custom-shape-divider-top-1626701600 svg {
+    height: 115px;
+  }
+
+
+
+
+  .custom-shape-divider-bottom-1626693409 svg {
+
+    height: 95px;
+  }
+
+
 }
