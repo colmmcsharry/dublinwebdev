@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 :root {
@@ -59,6 +60,7 @@
 
 html,body {
   width: 100%;
+  height:100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
@@ -67,7 +69,7 @@ html,body {
 body{
   font-family: "Roboto", sans-serif;
   line-height: 1.8;
-  min-height:100%;
+ 
 }
 
 a:hover, a:focus{
@@ -82,6 +84,8 @@ button:focus{
   width: 100vw;
 }
 
+section {margin-bottom:150px;
+margin-top:150px;}
 
 @media (max-width: 1599px) {
 .main-wrapper{
@@ -116,7 +120,7 @@ button:focus{
 
 .header--bg{
 
-    background: url("https://www.industrytap.com/wp-content/uploads/2016/05/ipad-laptop-phone.jpg") no-repeat;
+    background: url("../../assets/images/heroimgmob.jpeg") no-repeat;
     position: relative;
     height:100vh;
     background-size: cover;
@@ -283,9 +287,10 @@ button:focus{
 .panel__button{
   display: inline-block;
   font-size: 15px;
-  color: #7d7d7d;
+  color: white;
   padding: 8px 35px;
-  border: 2px solid #7d7d7d;
+ background-color: rgb(128, 173, 240);
+
   border-radius: 30px;
   font-family: Roboto-Light;
   font-weight: bold;
@@ -309,7 +314,7 @@ button:focus{
       }
 
 .service .thumbnail:hover .material-icons{
-        background-color: rgba(95, 124, 218)
+        background-color: rgba(95, 124, 218);
         -webkit-box-shadow: 0px 0px 15px 0px rgba(95, 124, 218);
                 box-shadow: 0px 0px 15px 0px rgba(95, 124, 218);
         color: #fff;
@@ -1215,7 +1220,9 @@ transform:scaleY(-1);
 }
 
 
-.aboutpar {display:block}
+.aboutpar {display:block;
+color:#646464;
+font-family:Poppins}
 
 .abouth2 {
   text-align:center;
@@ -1274,7 +1281,9 @@ transform:scaleY(-1);
 
   @media (min-width: 450px) {
 
-
+    .header--bg{
+      background: url("../../assets/images/heroimg.jpeg") no-repeat;
+    }
 
     .logopic {
       width:280px
@@ -1315,6 +1324,7 @@ transform:scaleY(-1);
   display: block;
   width: calc(100% + 1.3px);
   height: 26px;
+ 
 }
 
 .custom-shape-divider-bottom-1626693409 .shape-fill {
@@ -1564,7 +1574,7 @@ width: 150px;
   @media screen and (max-width: 520px) {
 
   #gridwrapper{padding:0 3vw;
-    font-size:1.1rem;
+    font-size:14px;
   }
 
   
@@ -1582,8 +1592,10 @@ width: 150px;
 
 
 .projdesc {
-  font-size:15px;
+  font-size:16px;
   text-align:center;
+  color:#646464;
+  font-family:Poppins;
 
 }
 
@@ -1609,7 +1621,7 @@ color:white;}
   color: white;
   font-family:Roboto-Light;
   font-size:16px;
-  width:800px;
+  max-width:70ch;
   text-align:left;
   margin:0 auto;
 }
@@ -1634,3 +1646,9 @@ color:white;}
 
 
 }
+
+
+.colm {
+margin-top:0;}
+
+.team {margin-top:0;}
