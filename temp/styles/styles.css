@@ -72,6 +72,10 @@ body{
  
 }
 
+
+
+
+
 a:hover, a:focus{
   text-decoration: none;
 }
@@ -87,20 +91,20 @@ button:focus{
 section {margin-bottom:150px;
 margin-top:150px;}
 
-@media (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
 .main-wrapper{
     width:100%;
     margin: 0 auto;
 }}
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .container{
     width:600px;
     margin: 0 auto;
 
 }}
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 .container{
     width:720px;
     margin: 0 auto;
@@ -108,7 +112,7 @@ margin-top:150px;}
 .mobline {display:none}
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 .container{
     width:1400px;
     margin: 0 auto;
@@ -207,7 +211,7 @@ margin-top:150px;}
 }
 
 .navbar-header button{
-  background-color: #ddd;
+  
 }
 
 .navbar-header .icon-bar{
@@ -454,9 +458,7 @@ margin-top:150px;}
   }
 
 @media screen and (max-width: 1198px) {
-      .contact--bg{
-        
-      }
+     
     }
 
 @media screen and (max-width: 900px) {
@@ -466,9 +468,7 @@ margin-top:150px;}
     }
 
 @media screen and (max-width: 670px) {
-      .contact--bg{
-       
-      }
+     
     }
 
 .contact--bg:after{
@@ -1186,7 +1186,7 @@ transform:scaleY(-1);
 }
 
 /* logo on tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   
   .header .navbar-brand{
     top:-40px;
@@ -1244,7 +1244,7 @@ font-family:Poppins}
   margin: auto
 }
 
-@media (min-width: 1000px) {
+@media  screen and (min-width: 1000px) {
 
   .mycontainer {
     display:grid;
@@ -1279,7 +1279,17 @@ font-family:Poppins}
     width:200px
   }
 
-  @media (min-width: 450px) {
+
+  @media  screen and (min-width:414px) and (max-width:450px) {
+    .header__content {
+      top:-40px;
+    }
+  }
+
+
+
+  @media screen and (min-width: 450px) {
+
 
     .header--bg{
       background: url("../../assets/images/heroimg.jpeg") no-repeat;
@@ -1294,8 +1304,6 @@ font-family:Poppins}
   #prem {
  }
 
-  #budg {font-family: Comic Sans MS;
-  font-weight:100}
 
 .lottolol {
   width:50px;
@@ -1331,25 +1339,28 @@ font-family:Poppins}
   fill: #FFFFFF;
 }
 
+@media screen and (max-width: 450px) {
 
+  .header--bg{
+    background: url("../../assets/images/heroimgmob.jpeg") no-repeat;
+    position: relative;
+    height:100vh;  }
 
-
-@media (max-width: 450px) {
-  .header__content  {
-    transform:scale(0.9);
-    position:relative;
-    top:-80px;
-  }
+.header--bg:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: var(--classyblue);
+}
 
 }
 
-@media (max-width: 330px) {
-  .header__content {
-top:-130px;
-transform:scale(0.85);
 
-  }
-}
 
 
 
@@ -1425,7 +1436,7 @@ width: 150px;
 
 .My-Projects {margin-top: 15rem;
   font-size:4rem;
-  color:$cyan;
+  color:cyan;
   font-family:  Dancing Script, cursive, Snell Roundhand;
   }
   
@@ -1585,7 +1596,10 @@ width: 150px;
 }
 
 
-
+#satisfaction {
+  position:relative;
+  top:-20px;
+}
 
 
 
@@ -1652,3 +1666,33 @@ color:white;}
 margin-top:0;}
 
 .team {margin-top:0;}
+
+
+#blogpage {
+  margin-top:0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 330px) {
+  .header__content {
+    position:relative;
+    top:-90px;
+transform:scale(0.85);
+  }
+} 
