@@ -1341,22 +1341,7 @@ font-family:Poppins}
 
 @media screen and (max-width: 450px) {
 
-  .header--bg{
-    background: url("../../assets/images/heroimgmob.jpeg") no-repeat;
-    position: relative;
-    height:100vh;  }
-
-.header--bg:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: var(--classyblue);
-}
+  
 
 }
 
