@@ -844,6 +844,7 @@ margin-top:150px;}
     color: #7e7e7e;
     max-width: 750px;
     display: inline-block;
+    padding:0px 20px;
   }
 
 .slider__name{
@@ -1681,3 +1682,24 @@ margin-top:0;}
 transform:scale(0.85);
   }
 } 
+
+
+
+#contactpagesection {
+  display:grid;
+  place-items:center;
+}
+
+.contacth1 {
+  text-align:center;
+  margin-bottom:00px;
+}
+.contactlottie {
+  width:300px;
+  margin-bottom:50px;
+}
+
+@media screen and (min-width: 550px) {
+  .contactlottie {
+    width:450px;
+  }
