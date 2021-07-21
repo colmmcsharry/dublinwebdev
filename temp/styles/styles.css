@@ -211,8 +211,9 @@ margin-top:150px;}
 }
 
 .navbar-header button{
-  
+  background-color:rgb(224, 236, 252);
 }
+
 
 .navbar-header .icon-bar{
   background-color: #fff !important;
@@ -1699,7 +1700,31 @@ transform:scale(0.85);
   margin-bottom:50px;
 }
 
+.contactpglist {
+  font-size:24px 
+}
+
+#indexburger{
+  background-color: transparent;
+}
+
+
 @media screen and (min-width: 550px) {
   .contactlottie {
     width:450px;
   }
+
+}
+
+  .blobcontainer {
+position:relative;
+
+
+  }
+
+  .blogblob {
+    position:absolute;
+    z-index:-1;
+    width:80vw;
+  }
+
