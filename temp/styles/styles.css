@@ -538,11 +538,6 @@ margin-top:150px;}
     background-size: cover;
   }
 
-@media screen and (max-width: 430px) {
-      .letsGo--bg{
-
-      }
-    }
 
 .letsGo--bg:after{
       content: '';
@@ -788,11 +783,7 @@ background-position: center -100px;
       }
     }
 
-@media screen and (max-width: 607px) {
-      .overview--bg{
 
-      }
-    }
 
 .overview--bg:after{
       content: '';
@@ -1575,6 +1566,20 @@ width: 150px;
     font-size:14px;
   }
 
+  .contactpglist {
+    font-size:18px ;
+  list-style:none;
+  left:-25px;
+  position:relative;
+  }
+
+
+  #contactpagesection {
+    display:grid;
+    place-items:flex-start;
+  }
+  
+
   
   #gridwrapper  {
     padding-left:0vw;
@@ -1686,10 +1691,7 @@ transform:scale(0.85);
 
 
 
-#contactpagesection {
-  display:grid;
-  place-items:center;
-}
+
 
 .contacth1 {
   text-align:center;
@@ -1700,9 +1702,6 @@ transform:scale(0.85);
   margin-bottom:50px;
 }
 
-.contactpglist {
-  font-size:24px 
-}
 
 #indexburger{
   background-color: transparent;
@@ -1743,4 +1742,49 @@ place-items:center;
 .myicons {
   height:70px;
   width:70px;
+}
+
+
+
+.input1 {
+  display:block;
+  margin-bottom:20px;
+}
+
+.textbox {width:250px;
+height:150px;}
+
+.contactpglist {
+  font-size:22px ;
+  margin-bottom:50px;
+}
+
+
+
+.blog1title {
+  text-align:center; 
+  margin-bottom:60px;
+  font-size:clamp(20px, 4vh, 28px);
+}
+
+.Blog p {
+  font-size:clamp(16px, 2.3vh, 21px);
+  max-width:900px;
+  margin:0 auto;
+  font-family:Poppins;
+  margin-bottom:13px;
+}
+
+.blogsubhead {
+  text-align:center; 
+  margin-bottom:30px;
+}
+
+.lastp {margin-bottom:30px !important}
+
+.colortest {
+  margin:0 auto;
+  background-color:black;
+  max-width:900px;
+  
 }
