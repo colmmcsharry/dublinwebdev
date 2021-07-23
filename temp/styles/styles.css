@@ -1763,8 +1763,8 @@ height:150px;}
 
 .blog1title {
   text-align:center; 
-  margin-bottom:60px;
-  font-size:clamp(20px, 4vh, 28px);
+  margin-bottom:90px;
+  font-size:clamp(20px, 4vh, 36px);
 }
 
 .Blog p {
@@ -1777,7 +1777,11 @@ height:150px;}
 
 .blogsubhead {
   text-align:center; 
-  margin-bottom:30px;
+  margin:60px 0px;
+}
+
+.blogsubhead:first-of-type {
+  color:rgb(127, 144, 241);
 }
 
 .lastp {margin-bottom:30px !important}
@@ -1786,5 +1790,43 @@ height:150px;}
   margin:0 auto;
   background-color:black;
   max-width:900px;
-  
+}
+
+.rolexbig {
+  position:relative;
+  margin:50px auto;
+  display:grid;
+
+}
+#classytext {
+  position:absolute;
+  top:20px;
+  left:5px;
+  padding:30px;
+  color:white;
+  font-family: Cursive;
+  font-size:clamp(16px, 3vh, 28px) 
+  }
+
+  #funnytext {
+    position:absolute;
+    top:20px;
+    left:3px;
+    padding:25px;
+    color:white;
+    font-family: Comic Sans MS;
+    font-size:clamp(16px, 3vh, 28px) 
+    }
+
+    #crap {
+      font-size:10px;
+      white-space: nowrap;
+      line-height: 1;
+      margin:30px 0px;
+    }
+
+    .speedimg {margin: 30px 0px;}
+
+.speedlist {font-weight:bold !important;
+  font-style: italic;
 }
