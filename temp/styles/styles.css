@@ -675,7 +675,7 @@ background-position: center -100px;
   }
 
 .team .thumbnail{
-  border:1px solid red;
+
     padding: 0;
     border: 0;
   }
@@ -1767,12 +1767,17 @@ height:150px;}
   font-size:clamp(20px, 4vh, 36px);
 }
 
+.blogcontainer {
+  text-align:center;
+}
+
 .Blog p {
   font-size:clamp(16px, 2.3vh, 21px);
   max-width:900px;
   margin:0 auto;
   font-family:Poppins;
   margin-bottom:13px;
+  text-align:left;
 }
 
 .blogsubhead {
@@ -1792,11 +1797,11 @@ height:150px;}
   max-width:900px;
 }
 
+/* this is the containers for each of the rolex pics */
 .rolexbig {
   position:relative;
-  margin:50px auto;
-  display:grid;
-
+  margin:50px 0px;
+  display:inline-block;
 }
 #classytext {
   position:absolute;
@@ -1819,14 +1824,21 @@ height:150px;}
     }
 
     #crap {
-      font-size:10px;
-      white-space: nowrap;
+      font-size:11px;
       line-height: 1;
       margin:30px 0px;
     }
 
-    .speedimg {margin: 30px 0px;}
+    .speedimg {margin: 30px 0px;
+      box-shadow: 0px 0px 5px 0px rgba(168, 157, 157, 0.31)}
 
 .speedlist {font-weight:bold !important;
   font-style: italic;
+}
+
+.Blog img {
+  width:100%;
+  position:relative;
+  margin:0 auto;
+max-width:600px;
 }
