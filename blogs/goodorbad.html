@@ -17,30 +17,32 @@
 </head>
 <body>
 
-        <nav class="navbar">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" id="indexburger" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span> 
-            </button>
-            <a class="logocontainer" href="/"><img class="logopic" src="./assets/images/dubtitle.png"/></a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav pull-right">
-              <li><a class="navlink" href="/">HOME</a></li>
-              <li><a class="navlink" href="#">SERVICES</a></li>
-              <li><a class="navlink" href="#">ABOUT</a></li> 
-              <li><a class="navlink" href="#">PORTFOLIO</a></li> 
-              <li><a class="navlink" href="./blog.html">BLOG</a></li> 
-              <li><a class="navlink" href="./contact.html">CONTACT</a></li> 
-            </ul>
-          </div>
-        </nav>
+    
+    <nav class="navbar blognavbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="logocontainer" href="/"><img class="logopic" src="../assets/images/dubtitleblu.png"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav pull-right">
+            <li><a class="navlink" href="/">HOME</a></li>
+            <li><a class="navlink" href="#">SERVICES</a></li>
+            <li><a class="navlink" href="#">ABOUT</a></li> 
+            <li><a class="navlink" href="#">PORTFOLIO</a></li> 
+            <li><a class="navlink" href="./blog.html">BLOG</a></li> 
+            <li><a class="navlink" href="./contact.html">CONTACT</a></li> 
+          </ul>
+        </div>
+      </nav>
         
     
     <section class="Blog 1">
       <div class="container blogcontainer">
+
         
           <h1 class="page-section__title blog1title"> What makes a website <em>"good"</em> or <em>"bad"</em> ?</h2>
 
@@ -48,8 +50,9 @@
 
           <p>Here I will describe some of the main factors that decide whether a website is perceived as "good" or "bad".
           </p>
-          <h2 class="page-section__title blogsubhead"> Colours</h2>
-
+          <div class="colorh2container">
+          <h2 class="page-section__title blogsubhead" id="multicolortext"> Colours</h2>
+        </div>
           <p style="color:yellow"> colour is probably the most important element in web design... </p>
           <p style="color:pink"> colour is probably the most important element in web design... </p>
           <p> colour is probably the most important element in web design...</p>
@@ -119,20 +122,23 @@
         </p>
 
         <p>While many of us will be able to read the above passage if we look closely, there are many elderly or visually impaired people in the world who couldn't. As a general rule, font-size should be always at least 16px.
-        A poorly developed site will often have accessibility issues, and so disadvantaged people will be unable to use it properly. Dominos was recently sued by a blind man
-        who was unable to order from their site, despite using a screen-reader help him. Going forward, Google rankings will place heavy emphasis on accessibility, and it takes
-        a skilled developer to make sure a site is up to scratch in this regard.
+        A poorly developed site will often have accessibility issues like these, and so disadvantaged people will be unable to use it properly. 
+        <a href="https://www.cnbc.com/2019/10/07/dominos-supreme-court.html"> Dominos was recently successfully sued by a blind man
+            who was unable to order from their site, despite using a screen-reader help him. </a></p>
+
+        <p>  Going forward, Google rankings will place heavy emphasis on accessibility, and it takes
+        a skilled developer to make sure a site is up to scratch in this regard.</p>
             
            
-        As we scroll down a website, our eyes and brains expect consistency in terms of layout and spacing.
+       <p>As we scroll down a website, our eyes and brains expect consistency in terms of layout and spacing.
         A poor developer will just wing it and have a guess at what margins and padding to use, and this often turns out badly.
 
-        Insufficient white space between text,images and sections, also gives a site a very cluttered feel.
+        Insufficient white space between text, images and sections, also gives a site a very cluttered feel.
         </p>
 
         <h2 class="page-section__title blogsubhead"> Speed</h2>
 
-        <img class="speedimg" src="../assets/images/speed.png" width="100%" alt="site speed" />
+        <img id="speedimg" src="../assets/images/speed.png" width="100%" alt="site speed" />
 
         <p>I could list a whole lot of other factors, but I will conclude with website speed. Back in 2006, Amazon presented a study that showed each extra milisecond, cost them 1% revenue annually. That's well over a billion dollars, each year.
         As technology advances, our attention spans are waning. Thus, it's becoming more and more important to have fast loading times on websites.</p>
@@ -186,17 +192,27 @@
 
 
         Besides just using our eyes to decide if a website looks good or bad, there are tools that will rank a website for it's speed, accessibility, SEO,
-        Best Practices and more. Here is a before/after I did with a client's website.</p>
+        Best Practices and more. Below is a comparison of one of my client website results, before and after I worked on their site.</p>
 
         <div class="rolexbig">
         <img src="../assets/images/CurrentCrezoLighthouse.jpg" loading="lazy" width="100%" alt="old site score">
         <img src="../assets/images/NewCrezoLighthouse.jpg" loading="lazy" width="100%" alt="new site score">
             </div>
-            
+
         <p>A good website should be getting at least 85 on all of these performance markers. Scores below this could be costing you customers, credibility and lots of money!</p>
+
+        <p> I hope this article has given you some enlightenment on what makes a website good or bad. As a bonus, having lots of written content
+            containing key words like "website", "developer", etc will help my site in regards to SEO!
+            
+            
+            If you have any questions or would like more info, <a href="https://www.dublinwebdev.ie/contact.html">give us a call or an email and we'd be delighted to chat!</a>
+            
+        </p>
 
         
 
+        
+        
 
                 
 
@@ -300,8 +316,8 @@
 
   
 
-  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
  
 
   <script>
