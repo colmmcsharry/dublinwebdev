@@ -1978,5 +1978,34 @@ font-family: Poppins}
    margin-bottom:200px;
  }
 
-.mainpageprojcontainer {
+#mainpageprojsection{
+  margin-bottom:100px;
 }
+
+
+#handshakesection{
+  display: block;
+  margin-bottom:200px !important;
+  background-color:red;
+  border:2px solid yellow;
+}
+
+.processlist {
+  font-size:clamp(16px, 2.3vh, 21px);
+  list-style-position: inside;
+  text-align:left;
+  padding-left:0;
+  font-style: italic;
+}
+
+.listcontainer {text-align:left;
+margin:30px auto;
+max-width:850px;}
+
+
+
+figcaption {
+  color: grey;
+}
+
+figure {margin-bottom:30px;}
