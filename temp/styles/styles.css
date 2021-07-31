@@ -109,13 +109,23 @@ margin-top:150px;}
     margin: 0 auto;
 }
 .mobline {display:none}
+
+
+
+
 }
 
 @media screen and (min-width: 1200px) {
 .container{
     width:1400px;
     margin: 0 auto;
-}}
+}
+
+.aboutme {
+  padding-top:100px;
+}
+
+}
 
 
 
@@ -151,6 +161,11 @@ margin-top:150px;}
     padding-top: 30px;
     margin-bottom: 200px;
    
+  }
+
+  .blogtainer {
+    background-image:var(--classyblue);
+    width:100vw;
   }
 
   .blognavbar {padding-left:10px;}
@@ -196,12 +211,12 @@ margin-top:150px;}
   } */
 
   .navlink {
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0) !important;
+    text-decoration: underline 0.15em rgb(94, 165, 214,0) !important;
     transition: text-decoration-color 300ms !important;
   }
   
   .navlink:hover {
-    text-decoration-color: rgba(255, 255, 255, 1) !important;
+    text-decoration-color: rgba(94, 165, 214, 1) !important;
   }
 
 
@@ -210,6 +225,33 @@ margin-top:150px;}
 .navlink:hover {
   background-color:transparent !important;
 }
+
+
+
+.indexnavlink {
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0) !important;
+  transition: text-decoration-color 300ms !important;
+}
+
+.indexnavlink:hover {
+  text-decoration-color: rgba(255, 255, 255, 1) !important;
+}
+
+
+
+
+.indexnavlink:hover {
+background-color:transparent !important;
+}
+
+
+
+
+
+
+
+
+
 
 .navbar-header button{
   background-color:transparent;
@@ -409,7 +451,7 @@ margin-top:150px;}
   }
 
 .page-section__title{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     color: #556a87;
     margin-bottom: 25px;
@@ -490,6 +532,14 @@ margin-top:150px;}
       background-image: linear-gradient(to bottom, #6a93cb 0%, #a4bfef 74%);
       z-index: -1;
     }
+
+ .about {
+   position:relative;
+   background-image:var(--classyblue);
+   color:white !important;
+   padding-top:240px;
+   padding-bottom:100px;
+ }   
 
 .about--narrow{
     max-width: 1230px;
@@ -693,13 +743,13 @@ background-position: center -100px;
 
 .team__name{
     font-size: 20px;
-    color: #4f4f4f;
+    color: white;
     font-weight: bold;
   }
 
 .team__title{
     font-size: 17px;
-    color: #8e8e8e;
+    color: #f3f3f3;
   }
 
 @media screen and (max-width: 1200px){
@@ -707,6 +757,14 @@ background-position: center -100px;
     margin-bottom: 30px;
   }
 }
+
+
+
+
+
+
+
+
 
 .price__panel-wrapper{
     max-width: 1020px;
@@ -971,6 +1029,11 @@ background-position: center -100px;
     border: 0;
   }
 
+  .myhead {text-align:center;
+  background-color:transparent;
+border:none;
+}
+
 .blog .thumbnail:hover .blog__title, .blog .thumbnail:hover .blog__read-more{
         color: #00aafe;
       }
@@ -1220,12 +1283,17 @@ transform:scaleY(-1);
 
 
 .aboutpar {display:block;
-color:#646464;
+color: white;
 font-family:Poppins}
 
 .abouth2 {
   text-align:center;
   margin-bottom:100px;
+  color:white;
+}
+
+.aboutdivider {
+  margin-bottom:300px !important;
 }
 
 .rightcontent {
@@ -1248,6 +1316,7 @@ font-family:Poppins}
   .mycontainer {
     display:grid;
     grid-template-columns: 1fr 1fr;
+
   }
 
   .lotto {
@@ -1428,6 +1497,7 @@ width: 150px;
   
   #projwrap {display:block;
    text-align:center; 
+   margin-bottom:300px;
   }
   
   
@@ -1435,22 +1505,22 @@ width: 150px;
   padding: 30px;
   font-family:  Roboto;
   color:#556a87;
-  font-size:2rem;
+  font-size:2.4rem;
   }
   
   #gridwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
+    grid-gap: 10em;
     text-align: left;
     align-items:center;
     padding:2rem;
     padding-left:6vw;
     padding-right:6vw;
+  
   }
   
   #right {
-  
     position:relative;
     align-items:center;
   }
@@ -1570,8 +1640,9 @@ width: 150px;
   @media screen and (max-width: 520px) {
 
   #gridwrapper{padding:0 3vw;
-    font-size:14px;
   }
+
+ #right {margin-top:70px;}
 
   .contactpglist {
     font-size:18px ;
@@ -1873,3 +1944,39 @@ max-width:600px;
   padding-top:40px;
 }
 
+#left {font-size:16px;
+font-family: Poppins}
+
+
+
+#portfoliocontainer {
+  width:100vw;
+}
+
+.mycontainer {
+  margin-bottom:200px;
+}
+
+.blogh2 {color:white;}
+
+.blogpar {color:rgb(245, 245, 245);}
+
+.blogpic {
+  border-top-left-radius:15px;
+}
+
+.blogpic {
+  border-top-right-radius:15px;
+}
+
+.thumbnail {
+  border-radius:15px;
+ }
+
+ .blogtainer {
+   position:relative;
+   margin-bottom:200px;
+ }
+
+.mainpageprojcontainer {
+}
