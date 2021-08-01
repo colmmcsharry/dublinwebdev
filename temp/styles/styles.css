@@ -2056,3 +2056,15 @@ margin-bottom:200px;
   color:#333333;
   font-family:Poppins;
 }
+
+
+
+.navbar {max-width:99vw;
+}
+
+/* #servcontainer {max-width:79vw !important;
+border:5px solid red;} */
+
+.container {
+  max-width:96vw !important;
+}
