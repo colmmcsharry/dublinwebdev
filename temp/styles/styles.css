@@ -69,6 +69,10 @@ body{
 
 
 
+.logocontainer {
+  top:-18px;
+  position:relative;
+}
 
 a:hover, a:focus{
   text-decoration: none;
@@ -1326,14 +1330,14 @@ font-family:Poppins}
     top:60px;
   }
   
+  .logocontainer {
+    top:-5px;
+    position:relative !important;
+  }
   
   }
 
-  .logocontainer {
-    top:-20px;
-    position:relative !important;
-
-  }
+ 
 
   .logopic {
     width:200px !important;
@@ -1487,9 +1491,10 @@ width: 150px;
   }
   
   
-  #projwrap {display:block;
+  .projwrap {display:block;
    text-align:center; 
    margin-bottom:300px;
+
   }
   
   
@@ -2078,3 +2083,10 @@ border:5px solid red;} */
 .aboutcolm {margin-bottom:100px}
 
 .undrawguy {margin-bottom:90px;}
+
+
+#frontpageprojbut {
+  margin:0 auto;
+}
+
+#frontpageprojwrap {margin-bottom:150px;}
