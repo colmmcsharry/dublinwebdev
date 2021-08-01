@@ -2055,7 +2055,18 @@ margin-bottom:200px;
   margin:0 auto;
   color:#333333;
   font-family:Poppins;
+  
 }
+
+.aboutcontainer p {
+ font-size:clamp(16px, 2.3vh, 21px);
+}
+
+
+  
+
+
+
 
 
 
@@ -2068,3 +2079,11 @@ border:5px solid red;} */
 .container {
   max-width:96vw !important;
 }
+
+.colmcaption {
+  color:gray !important
+}
+
+.aboutcolm {margin-bottom:100px}
+
+.undrawguy {margin-bottom:90px;}
