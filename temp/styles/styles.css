@@ -2094,6 +2094,6 @@ border:5px solid red;} */
 @media screen and (max-width: 450px) {
   .header__content {
     position:relative;
-    top:-62px;
+    top:-52px;
   }
 } 
