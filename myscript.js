@@ -11,14 +11,14 @@ const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 const enableDarkMode = () => {
     body.classList.add("dark-mode");
     document.getElementById('header--bg').classList.add('darkbgimage');
-    body.style.setProperty('--mybodycol', 'gray')
+    body.style.setProperty('--mybodycol', '#041F32 ')
     localStorage.setItem("darkMode", "enabled")
 }
 
 // Disable Dark Mode
 const disableDarkMode = () => {
     body.classList.remove("dark-mode");
-    body.style.setProperty('--mybodycol', 'orange')
+    body.style.setProperty('--mybodycol', 'white')
     localStorage.setItem("darkMode", null)
 }
 
