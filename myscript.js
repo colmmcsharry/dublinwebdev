@@ -1,6 +1,7 @@
 /* Body */
 const body = document.querySelector('body');
 
+
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector('.dark-mode-button');
@@ -10,12 +11,14 @@ const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 const enableDarkMode = () => {
     body.classList.add("dark-mode");
     document.getElementById('header--bg').classList.add('darkbgimage');
+    body.style.setProperty('--mybodycol', 'gray')
     localStorage.setItem("darkMode", "enabled")
 }
 
 // Disable Dark Mode
 const disableDarkMode = () => {
     body.classList.remove("dark-mode");
+    body.style.setProperty('--mybodycol', 'orange')
     localStorage.setItem("darkMode", null)
 }
 
@@ -45,3 +48,5 @@ darkModeToggle.addEventListener('click', () => {
             disableDarkMode();
         }
     })
+
+   

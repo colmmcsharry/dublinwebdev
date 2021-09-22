@@ -20,6 +20,7 @@ Scroll to the bottom to start adding your dark mode styles
     --dark: #000;
     --medium: #1b1b1b;
     --light: #2e2e2e;
+    --blah: #041F32 ;
 }
 
 .dark-mode-button {
@@ -215,7 +216,7 @@ body.dark-mode .shape-fill {
 }
 
 body.dark-mode #updates {
-    background: #000000;
+    background: green;
 }
 
 body.dark-mode #header--bg {
@@ -232,5 +233,9 @@ body.dark-mode #header--bg {
         background: url('../../assets/images/mobnight.jpg') no-repeat;
         background-size:cover;
     }
+
+    /* body.dark-mode {
+        background:var(--mybodycol) !important;
+    } */
 
   }
