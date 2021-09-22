@@ -5,7 +5,8 @@
 :root {
   --bgblue:linear-gradient(to bottom,rgb(147,197,253,0.9),rgb(37,99,235,0.9)); 
   --classyblue:linear-gradient(to top, rgba(146, 168, 241, 0.9), rgba(95, 124, 218, 0.9));
-  --darknavytext:white;
+  --darknavytext:#333;
+  --darkclassyblue:linear-gradient(to top, rgba(66, 76, 107, 0.9), rgba(43, 56, 97, 0.9));
   --whitetext:white;
   --templateblue:linear-gradient(
     60deg
@@ -70,7 +71,13 @@ body{
  
 }
 
+body.dark-mode .targetElement {
+  background: #000000;
+}
 
+svg.dark-mode .targetElement {
+  color:red;
+}
 
 
 .logocontainer {
@@ -143,15 +150,15 @@ margin-top:40px;
 
 
 
-.header--bg{
-    background: url("../../assets/images/mobdub.jpg") no-repeat;
+#header--bg{
+    background: url("../../assets/images/mobday.jpg") no-repeat;
     position: relative;
     height:100vh;
     background-size: cover;
     z-index:1;
   }
 
-.header--bg:after{
+#header--bg:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -160,7 +167,7 @@ margin-top:40px;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color:rgba(0, 0, 0, .47);
+    /* background-color:rgba(255, 255, 255, 0.07); */
     z-index: -2;
   }
 
@@ -190,13 +197,13 @@ margin-top:40px;
 
 .header .nav li a{
     font-size: 15px;
-    color: var(--darknavytext);
+    color: var(--whitetext);
   }
 
 .header__content__title{
     font-size: 60px;
     font-weight: normal;
-    color: var(--darknavytext);
+    color:black;
     letter-spacing: 3px;
     margin-bottom: 25px;
     font-family: 'Kaushan Script', cursive;
@@ -204,7 +211,7 @@ margin-top:40px;
 
 .header__content__paragraph{
     font-size: 22px;
-    color: var(--darknavytext);
+    color: var(--darktext);
     max-width: 530px;
     margin-right: auto;
     margin-left: auto;
@@ -1120,7 +1127,6 @@ transform:scaleY(-1);
 .footer__title{
     font-size: 20px;
     color: #fff;
-    font-family: Roboto-Light;
     font-weight: bold;
     padding-top: 80px;
     margin-bottom: 25px;
@@ -1288,6 +1294,30 @@ transform:scaleY(-1);
   top:15px;
 }
 
+
+#lightswitchmob {display:none}
+
+@media screen and (max-width:480px){
+  .pull-right {
+    background-color:rgb( 79, 79, 79, 0.5 );
+    backdrop-filter:blur(10px);
+   
+    float: right!important;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+
+  #lightswitchmob {
+    position:absolute;
+    top:100px;
+    left:6px;
+    display:block;
+  
+  }
+
+}
+
 #thinking {
   padding:0px 20px;
   margin-bottom:90px;
@@ -1361,19 +1391,15 @@ font-family:Poppins}
   }
 
 
-  @media  screen and (min-width:414px) and (max-width:450px) {
-    .header__content {
-      top:-70px;
-    }
-  }
+
 
 
 
   @media screen and (min-width: 450px) {
 
 
-    .header--bg{
-      background: url('../../assets/images/dubskylinedrkcropped2.jpg') no-repeat;
+    #header--bg{
+      background: url('../../assets/images/dubskylineblu.jpg') no-repeat;
       background-size:cover;
     }
 
@@ -1383,8 +1409,6 @@ font-family:Poppins}
 
   }
 
-  #prem {
- }
 
 
 .lottolol {
@@ -1774,16 +1798,31 @@ margin-top:0;}
 
 
 
+@media screen and (max-width:480px) { 
+  .header__content {
+    position:absolute;
+    top:20%;
+    }
 
+    #myheadertext {
+      z-index:-1 !important;
+
+    }
+
+
+.collapse .navbar-collapse {
+  z-index: 9999 !important
+}
+
+
+}
 
 
 
  @media screen and (max-width: 330px) {
   .header__content {
-    position:relative !important;
-    bottom:180px;
 transform:scale(0.65);
-height:1px;
+position:absolute;
   }
 } 
 
@@ -2112,13 +2151,19 @@ border:5px solid red;} */
 
 
 @media screen and (max-width: 450px) {
-  .header__content {
-    position:relative;
-    top:-52px;
-  }
-} 
+
 
 .letsgo{
   font-size:16px;
 }
 
+.darkbgimage {
+  background: url('../../assets/images/dubskylinedrkcropped2.jpg') no-repeat;
+}
+
+#ctabutton {
+  color: var(--darknavytext);
+  border-color: var(--darknavytext);
+  font-weight: bolder;
+
+}

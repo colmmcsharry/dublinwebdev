@@ -18,15 +18,17 @@
 
   <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="temp/styles/dark.css">
   
 </head>
 <body>
   
-    <header class="header header--bg">
+    <header class="header" id="header--bg">
       
 
       <div class="container">
-        <nav class="navbar">
+
+            <nav class="navbar">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" id="indexburger" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar indexbars"></span>
@@ -37,20 +39,30 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
-              <li><a class="indexnavlink" href="/">HOME</a></li>
               <li><a class="indexnavlink" href="./service.html">SERVICES</a></li>
               <li><a class="indexnavlink" href="./about.html">ABOUT</a></li> 
               <li><a class="indexnavlink" href="./portfolio.html">PORTFOLIO</a></li> 
               <li><a class="indexnavlink" href="./blog.html">BLOG</a></li> 
-              <li><a class="indexnavlink" href="./contact.html">CONTACT</a></li> 
+              <li><a class="indexnavlink" href="./contact.html">CONTACT</a></li>  
+              <li id="buttonlistitem">  <button id="lightswitch" class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                <span aria-hidden="true" class="dark-toggle">
+                    <span class="DTspan"></span>
+                </span>
+            </button>   </li>
             </ul>
+
+           
+            
           </div>
         </nav>
-        <div class="header__content text-center">
+        <div class="header__content text-center" id="myheadertext">
           <h1 class="header__content__title "> Getting Dublin <br class="mobline"/>
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jntoqwpv.json" background="transparent" class="lottolol"  speed="1" loop  autoplay></lottie-player>nline </h1>
+
+            <!-- <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jntoqwpv.json" background="transparent" class="lottolol"  speed="1" loop  autoplay></lottie-player> -->
+            
+            Online </h1>
           <p class="header__content__paragraph">We help small businesses get online, get more customers and get more money!</p>
-          <a class="button button--hover" href="./contact.html" >Get in touch!</a>
+          <a class="button button--hover" id="ctabutton" href="./contact.html" >Get in touch!</a>
         </div>
         <!-- <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_pwohahvd.json"  background="transparent" class="servlottie"  speed="1" loop  autoplay></lottie-player> -->
 
@@ -59,18 +71,13 @@
       </div>
 
 
-      <div class="custom-shape-divider-bottom-1626693409">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
       
     </header>
     
     <section class="service" id="servcontainer">
       <div class="container">
         <div class="page-section text-center">
-          <h2 class="page-section__title">Services</h2>
+          <h2 class="page-section__title blueheading">Services</h2>
           <p class="page-section__paragraph">We cover everything to ensure your website looks great, performs great and maximises your profits </p>
           <div class="row gutters-40">
             <div class="col-md-4">
@@ -229,7 +236,7 @@
       <div class="container">
         <section class="price">
           <div class="page-section page-section--small text-center">
-            <h2 class="page-section__title pricing">Pricing</h2>
+            <h2 class="page-section__title pricing blueheading">Pricing</h2>
             <p class="page-section__paragraph">Whether you're a small startup, established business or worldwide corporation, we have a plan to suit you. </p>
             <div class="price__panel-wrapper">
               <div class="row gutters-50">
@@ -328,7 +335,7 @@
 
       <div class="container">
         <section class="project projdesc" id="mainpageprojsection">
-          <h2 class="page-section__title workh2">Work Samples</h2>
+          <h2 class="page-section__title workh2 blueheading">Work Samples</h2>
 
 
 
@@ -463,7 +470,7 @@
       <div class="container">
         <section class="slider">
           <div class="page-section text-center">
-            <h2 class="page-section__title">Client Testimonials</h2>
+            <h2 class="page-section__title blueheading">Client Testimonials</h2>
             <p class="page-section__paragraph"> We believe the best way of finding future clients is through your current clients, so we make sure to keep them happy! </p>
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
@@ -635,7 +642,7 @@
 
   <script src="assets/jquery/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
+  <script type="text/javascript" src="myscript.js"></script>
 
 
 
