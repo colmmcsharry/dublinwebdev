@@ -194,6 +194,16 @@ body.dark-mode #ctabutton {
     color:rgb(147,197,253);
 }
 
+body.dark-mode .onlineword, 
+body.dark-mode .titlebold  {
+    color:rgb(147,197,253);
+}
+
+body.dark-mode #myheadertext {
+background-color:none !important
+}
+
+body.dark-mode #header--bg:after{background-color:rgba(0, 0, 0, 0.0);}
 
 
 body.dark-mode .blogtainer, body.dark-mode .about, body.dark-mode .letsGo--bg:after, body.dark-mode .video-section--bg:after, body.dark-mode .overview--bg:after, body.dark-mode .contact-two--bg:after, body.dark-mode .footer--bg:after {
