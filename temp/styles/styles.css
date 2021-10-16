@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
 :root {
@@ -931,6 +931,7 @@ background-position: center -100px;
 .slider__paragraph{
     font-size: 16px;
     color: #7e7e7e;
+    font-style:italic;
     max-width: 750px;
     display: inline-block;
     padding:0px 20px;
@@ -940,12 +941,15 @@ background-position: center -100px;
     font-size: 18px;
     color: #4f4f4f;
     font-weight: bold;
+    line-height: 0.4;
+    margin-top:12px;
   }
 
 .slider__title{
-    font-size: 15px;
-    color: #7e7e7e;
+    font-size: 16px;
+    color: #6f6e6e;
     padding-bottom: 25px;
+    font-weight: bold;
   }
 
 .slider .carousel-control.left, .slider .carousel-control.right{
