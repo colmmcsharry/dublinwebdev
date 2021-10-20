@@ -2168,6 +2168,30 @@ border:5px solid red;} */
 #frontpageprojwrap {margin-bottom:150px;}
 
 
+/* #moblightswitch {
+  display:none;} */
+
+  .dark-mode-button {
+    position:absolute;
+    top:-0px;
+    left:-32px;
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+ {
+  .dark-mode-button {
+    position:absolute;
+    top:-0px;
+    left:32px;
+  }
+
+}
+
+
+
 
 @media screen and (max-width: 450px) {
 
@@ -2175,9 +2199,14 @@ border:5px solid red;} */
     .letsgo{
       font-size:16px;
     }
-    #buttonlistitem {
-      display:none
+
+    .dark-mode-button {
+      position:absolute;
+      top:-20px;
+      left:-42px;
     }
+    
+  
 
     .darkbgimage {
       background: url('../../assets/images/dubskylinedrkcropped2.jpg') no-repeat;

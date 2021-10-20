@@ -10,12 +10,14 @@ const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 // Enable Dark Mode
 const enableDarkMode = () => {
     body.classList.add("dark-mode");
+    
     localStorage.setItem("darkMode", "enabled")
 }
 
 // Disable Dark Mode
 const disableDarkMode = () => {
     body.classList.remove("dark-mode");
+    
     localStorage.setItem("darkMode", null)
 }
 
