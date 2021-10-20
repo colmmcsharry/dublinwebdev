@@ -16,11 +16,12 @@ Scroll to the bottom to start adding your dark mode styles
 
 /* note that Internet Explorer does not support css variables */
 :root {
-     --darkclassyblue:linear-gradient(to top, rgba(66, 76, 107, 0.9), rgba(43, 56, 97, 0.9));
+     --darkclassyblue:linear-gradient(to top, rgba(66, 76, 107), rgba(43, 56, 97));
     --dark: #000;
     --medium: #1b1b1b;
     --light: #2e2e2e;
-    --blah: #041F32 ;
+    --blah: #041F32;
+    --verylightblue: rgb(215, 234, 255);
 }
 
 .dark-mode-button {
@@ -162,7 +163,7 @@ body.dark-mode p {
 }
 
 body.dark-mode .blueheading {
-    color: rgb(147,197,253)
+    color:white;
 }
 
 body.dark-mode .projwrap {
@@ -170,8 +171,7 @@ body.dark-mode .projwrap {
 }
 
 body.dark-mode .header__content__title {
-    color:white;
-}
+    color: var(--verylightblue)}
 
 @media screen and (min-width:450px) {
 
@@ -180,6 +180,10 @@ body.dark-mode .header__content__title {
     }
 
 }  
+
+body.dark-mode .page-section__title {
+    color:white;
+}
 
 body.dark-mode #ctabutton {
     color: white;
@@ -195,17 +199,23 @@ body.dark-mode #ctabutton {
   }
 
   body.dark-mode .projtitle {
-    color:rgb(147,197,253);
+    color:var(--verylightblue)
 }
+
+
 
 body.dark-mode .onlineword, 
 body.dark-mode .titlebold  {
-    color:rgb(147,197,253);
+    color:white;
 }
 
 body.dark-mode #myheadertext {
 background-color:none !important
 }
+
+body.dark-mode .header__content__paragraph {
+    color:var(--verylightblue)
+}   
 
 
 
@@ -218,9 +228,6 @@ body.dark-mode .shape-fill {
     fill: #041F32;
 }
 
-body.dark-mode #updates {
-    background: green;
-}
 
 body.dark-mode #header--bg {
     background: url('../../assets/images/dubskylinedrkcropped2.jpg') no-repeat;
@@ -236,9 +243,16 @@ body.dark-mode #header--bg {
         background: url('../../assets/images/mobnight.jpg') no-repeat;
         background-size:cover;
     }
-
-    /* body.dark-mode {
-        background:var(--mybodycol) !important;
-    } */
-
   }
+
+  body.dark-mode #updates {
+    background: #000000;
+}
+
+body.dark-mode .colmcaption {
+    color: rgb(238, 238, 238) !important;
+}
+
+body.dark-mode .contacth1, .contact-topper  {
+    color:white ;
+}

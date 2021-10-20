@@ -13,8 +13,8 @@
   <link rel="icon" type="image/png" href="assets/images/dubicon16.png"  sizes="16x16">
 
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="temp/styles/dark.css">
   
 </head>
 <body>
@@ -37,6 +37,11 @@
               <li><a class="navlink" href="./portfolio.html">PORTFOLIO</a></li> 
               <li><a class="navlink" href="./blog.html">BLOG</a></li> 
               <li><a class="navlink" href="./contact.html">CONTACT</a></li> 
+              <li id="buttonlistitem">  <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                <span aria-hidden="true" class="dark-toggle">
+                    <span class="DTspan"></span>
+                </span>
+            </button>   </li>
             </ul>
           </div>
         </nav>
@@ -57,7 +62,7 @@
               <div class="col-md-4">
                 <div class="thumbnail">
                   <a href="blogs/goodorbad.html" target="_blank">
-                    <img class="img-responsive" src="assets/images/badgood.jpg" alt="">
+                    <img class="img-responsive blogimg" src="assets/images/badgood.jpg" alt="">
                     <div class="caption">
                       <h3 class="blog__title">What makes a website "good" or "bad" ?</h3>
                       <p class="blog__paragraph">By Colm M <span class="blog__paragraph--slash">&#47;</span> 12 July, 2021  </p>
@@ -69,7 +74,7 @@
               <div class="col-md-4">
                 <div class="thumbnail">
                   <a href="/blogs/process.html" target="_blank">
-                    <img class="img-responsive" src="assets/images/webdevprocess.jpg" alt="">
+                    <img class="img-responsive blogimg" src="assets/images/webdevprocess.jpg" alt="">
                     <div class="caption">
                       <h3 class="blog__title">What does the process of building a website involve?</h3>
                       <p class="blog__paragraph">By Colm M  &#47; 19 July, 2021 </p>
@@ -81,7 +86,7 @@
               <div class="col-md-4">
                 <div class="thumbnail">
                   <a href="blogs/type.html" target="_blank">
-                    <img class="img-responsive" src="assets/images/typesites.jpeg" alt="">
+                    <img class="img-responsive blogimg" src="assets/images/typesites.jpeg" alt="">
                     <div class="caption">
                       <h3 class="blog__title">What kind of website do you need?</h3>
                       <p class="blog__paragraph">By Colm M &#47; 12 July, 2021</p>
@@ -120,11 +125,7 @@
 
 
         <footer class="footer footer--bg">
-          <div class="custom-shape-divider-top-1626701600">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
+          
           <div class="container">
             <div class="page-section">
               <div class="row gutters-100">
@@ -175,6 +176,7 @@
 
   <script src="assets/jquery/jquery-3.2.1.min.js"></script> 
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="myscript.js"></script>
 
 
 

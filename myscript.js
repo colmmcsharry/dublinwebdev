@@ -10,15 +10,12 @@ const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 // Enable Dark Mode
 const enableDarkMode = () => {
     body.classList.add("dark-mode");
-    document.getElementById('header--bg').classList.add('darkbgimage');
-    body.style.setProperty('--mybodycol', '#041F32 ')
     localStorage.setItem("darkMode", "enabled")
 }
 
 // Disable Dark Mode
 const disableDarkMode = () => {
     body.classList.remove("dark-mode");
-    body.style.setProperty('--mybodycol', 'white')
     localStorage.setItem("darkMode", null)
 }
 

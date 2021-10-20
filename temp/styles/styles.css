@@ -4,9 +4,9 @@
 
 :root {
   --bgblue:linear-gradient(to bottom,rgb(147,197,253,0.9),rgb(37,99,235,0.9)); 
-  --classyblue:linear-gradient(to top, rgba(146, 168, 241, 0.9), rgba(95, 124, 218, 0.9));
+  --classyblue:linear-gradient(to top, rgba(146, 168, 241, 0.9), rgba(95, 124, 218));
   --darknavytext:#333;
-  --darkclassyblue:linear-gradient(to top, rgba(66, 76, 107, 0.9), rgba(43, 56, 97, 0.9));
+  --darkclassyblue:linear-gradient(to top, rgba(66, 76, 107, 0.9), rgba(43, 56, 97));
   --whitetext:white;
   --mybodycol:white ;
   --templateblue:linear-gradient(
@@ -70,7 +70,7 @@ html,body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
-  height:100%;
+  min-height:100%;
 }
 
 
@@ -882,6 +882,7 @@ background-position: center -100px;
 
 
 
+
 .overview--bg:after{
       content: '';
       position: absolute;
@@ -941,15 +942,17 @@ background-position: center -100px;
     font-size: 18px;
     color: #4f4f4f;
     font-weight: bold;
-    line-height: 0.4;
+    line-height: 1.8;
     margin-top:12px;
+    margin-bottom:8px
   }
 
 .slider__title{
     font-size: 16px;
     color: #6f6e6e;
-    padding-bottom: 25px;
+    line-height: 0.1;
     font-weight: bold;
+  
   }
 
 .slider .carousel-control.left, .slider .carousel-control.right{
@@ -1018,6 +1021,7 @@ background-position: center -100px;
       margin-right: 20px;
       margin-left: 20px;
        overflow: hidden;
+       padding-bottom:20px;
     }
 
 .slider #myCarousel .carousel-control{
@@ -1846,6 +1850,8 @@ position:absolute;
 .contacth1 {
   text-align:center;
   margin-bottom:00px;
+  font-family:'Poppins';
+  font-weight:bold;
 }
 .contactlottie {
   width:300px;
@@ -2099,7 +2105,7 @@ figure {margin-bottom:30px;}
 max-width:600px;
 margin:0 auto;
 
-margin-bottom:200px;
+margin-bottom:30px;
 }
 
 #servpagecontainer {
@@ -2189,6 +2195,21 @@ border:5px solid red;} */
 body{ 
   font-family: "Roboto", sans-serif;
   line-height: 1.8;
-  background-color: var(--mybodycol) !important
+  background-color: white;
 }
 
+
+.abouth2, .blueheading, .blogh2, .page-section__title {
+  font-family: 'Poppins';
+  font-weight:bold
+}
+
+
+.blogimg {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.glyphicon {
+  color:gray !important;
+}
