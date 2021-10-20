@@ -21,7 +21,7 @@ Scroll to the bottom to start adding your dark mode styles
     --medium: #1b1b1b;
     --light: #2e2e2e;
     --blah: #041F32;
-    --verylightblue: rgb(215, 234, 255);
+    --verylightblue: rgb(194, 217, 243);
 }
 
 .dark-mode-button {
@@ -65,7 +65,7 @@ Scroll to the bottom to start adding your dark mode styles
 .top-dark-mode-button:after {
     content: 'DARK';
     position: absolute;
-    color: #fff;
+    color: var(--verylightblue);
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -253,6 +253,10 @@ body.dark-mode .colmcaption {
     color: rgb(238, 238, 238) !important;
 }
 
-body.dark-mode .contacth1, .contact-topper  {
+body.dark-mode .contacth1, body.dark-mode .contact-topper  {
     color:white ;
+}
+
+body.dark-mode .figma, body.dark-mode .navlink {
+    color:var(--verylightblue)
 }
