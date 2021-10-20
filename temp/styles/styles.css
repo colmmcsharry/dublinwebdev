@@ -934,6 +934,7 @@ background-position: center -100px;
     color: #7e7e7e;
     font-style:italic;
     max-width: 750px;
+    text-align:left;
     display: inline-block;
     padding:0px 20px;
   }
@@ -966,13 +967,16 @@ background-position: center -100px;
     width: 60px;
     height: 60px;
     display: inline-block;
-    color: rgb( 79, 79, 79 );
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.08);
-            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.08);
+    color: rgb(151, 168, 186);
+    /* -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.08); */
     font-size: 22px;
     line-height: 2.8;
     border-radius: 50px;
     text-shadow: none;
+    transform:scale(1.6);
+    border:1px solid rgb(151, 168, 186 ,0.1);
+    overflow:hidden;
   }
 
 .slider #myCarousel .carousel-inner{
@@ -995,14 +999,14 @@ background-position: center -100px;
 @media screen and (max-width: 1200px){
 
 .slider #myCarousel .left{
-        margin-left: 0;
+        margin-left: -15px;
         width: 30px;
         height: 30px
     }
       }
 
 .slider #myCarousel .right{
-      margin-right: 30px;
+      margin-right: 10px;
     }
 
 @media screen and (max-width: 1200px){
