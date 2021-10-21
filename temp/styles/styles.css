@@ -2208,7 +2208,7 @@ border:5px solid red;} */
     .dark-mode-button {
       position:absolute;
       top:-20px;
-      left:-42px;
+      left:-36px;
     }
     
   
@@ -2251,3 +2251,17 @@ body{
 .sliderlink {
   font-size:16px
 }
+
+.footerbutton {
+  left:-43px;
+}
+
+@media screen and (max-width:450px){
+  
+  .footerbutton{
+    top:20px;
+  }
+
+}
+
+.footerglyph {color:white !important;}
