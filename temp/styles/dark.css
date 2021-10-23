@@ -260,3 +260,16 @@ body.dark-mode .contacth1, body.dark-mode .contact-topper  {
 body.dark-mode .figma, body.dark-mode .navlink {
     color:var(--verylightblue)
 }
+
+
+body.dark-mode  #pricetitle{
+  
+    color: #313131 !important;
+    
+  }
+
+  body.dark-mode  #priceammount{
+    
+    color: #4f4f4f !important;
+   
+  }
