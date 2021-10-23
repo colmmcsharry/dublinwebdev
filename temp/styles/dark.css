@@ -273,3 +273,8 @@ body.dark-mode  #pricetitle{
     color: #4f4f4f !important;
    
   }
+
+
+@media screen and (max-width:450px){
+  .dark-mode-button {display:none;}
+}
