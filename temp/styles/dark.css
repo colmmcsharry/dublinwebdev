@@ -263,9 +263,7 @@ body.dark-mode .figma, body.dark-mode .navlink {
 
 
 body.dark-mode  #pricetitle{
-  
-    color: #313131 !important;
-    
+    color: #313131 !important; 
   }
 
   body.dark-mode  #priceammount{
