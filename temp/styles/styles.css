@@ -1558,8 +1558,9 @@ width: 150px;
   
   .projtitle {
   padding: 30px;
-  font-family:  Roboto;
-  color:#515a66;
+  font-family:  Poppins;
+  font-weight:bold;
+  color:#333333;
   font-size:2.6rem;
   }
   
