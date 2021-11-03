@@ -267,12 +267,10 @@ body.dark-mode  #pricetitle{
   }
 
   body.dark-mode  #priceammount{
-    
     color: #4f4f4f !important;
-   
   }
 
 
-@media screen and (max-width:450px){
+/* @media screen and (max-width:450px){
   .dark-mode-button {display:none;}
-}
+} */
