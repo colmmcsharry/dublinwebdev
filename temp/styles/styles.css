@@ -688,15 +688,10 @@ background-color:transparent !important;
     height: 590px;
     position: relative;
     background-size: cover;
-    z-index:-2;
+    z-index:2;
 background-position: center -100px;
   }
 
-@media screen and (max-width: 1198px) {
-      .video-section--bg{
-
-      }
-    }
 
 @media screen and (max-width: 900px) {
       .video-section--bg{
