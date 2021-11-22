@@ -1875,14 +1875,19 @@ position:absolute;
 
   .blobcontainer {
 position:relative;
-
-
   }
 
   .blogblob {
     position:absolute;
     z-index:-1;
     width:80vw;
+  }
+
+  #thirdblob {
+    left:1px;
+
+    transform:rotate(180deg);
+    bottom:-900px;
   }
 
 
@@ -2255,6 +2260,11 @@ body{
 }
 
 @media screen and (max-width:450px){
+
+  .blogblob {
+  
+    width:120vw;
+  }
   
   .footerbutton{
     top:20px;
