@@ -243,11 +243,18 @@ body.dark-mode #header--bg {
         background: url('../../assets/images/mobnight.jpg') no-repeat;
         background-size:cover;
     }
+
+    body.dark-mode .dark-mode-button {
+        display:none !important
+    }
+
   }
 
   body.dark-mode #updates {
     background: #000000;
 }
+
+
 
 body.dark-mode .colmcaption {
     color: rgb(238, 238, 238) !important;
