@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 
 :root {
@@ -16,12 +17,12 @@
 
 
 
-@font-face {
+/* @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url(../../assets/fonts/Roboto-Regular.ttf);
-}
+} */
 
 
 @font-face {
@@ -31,12 +32,6 @@
   src: url(../../assets/fonts/Roboto-Light.ttf);
 }
 
-@font-face {
-  font-family: 'Roboto-Bold';
-  font-style: normal;
- 
-  src: url(../../assets/fonts/Roboto-Bold.ttf);
-}
 
 @font-face {
   font-family: 'Material Icons';
@@ -83,7 +78,8 @@ svg.dark-mode .targetElement {
 }
 
 .titlebold {
-  font-family: Roboto-Bold;
+  font-family: 'Roboto';
+  font-weight:700;
   color: white;
 }
 
@@ -232,6 +228,7 @@ margin-top:50px;}
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
+    font-weight:500;
   }
 
 /* .header .navbar .navbar-nav > li > a, .header .navbar .navbar-brand, .header .navbar .navbar-nav > li > a:focus{
@@ -1749,7 +1746,7 @@ margin-top:150px;}
 }
 
 .tidbithead {font-size:35px !important;
-  font-family:Roboto, sans serif;
+  font-family:'Roboto', sans serif;
   font-weight:700;
 color:white;}
 
@@ -2223,14 +2220,13 @@ border:5px solid red;} */
     #ctabutton {
       color: var(--darknavytext);
       border-color: var(--darknavytext);
-      font-weight: bolder;
-
+      
     }
 
 }
 
 body{ 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.8;
   background-color: white;
 }
@@ -2273,3 +2269,80 @@ body{
 }
 
 .footerglyph {color:white !important;}
+
+#ctabutton {
+  font-weight: 700 !important;
+  border-width:2px;
+  -webkit-animation: heartbeat 2s ease-in-out infinite both;
+	        animation: heartbeat 2s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
