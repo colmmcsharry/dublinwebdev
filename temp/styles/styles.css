@@ -2347,3 +2347,11 @@ body{
   }
 }
 
+.nomb {
+  padding-top:1rem;
+  padding-bottom:2rem;
+}
+
+.bonkerslink {
+ color:inherit;
+}
