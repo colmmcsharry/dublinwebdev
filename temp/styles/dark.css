@@ -268,6 +268,12 @@ body.dark-mode .figma, body.dark-mode .navlink {
     color:var(--verylightblue)
 }
 
+@media screen and (max-width: 768px){
+
+body.dark-mode .navbar-collapse .navlink {
+    color: #1C4688
+}
+}
 
 body.dark-mode  #pricetitle{
     color: #313131 !important; 

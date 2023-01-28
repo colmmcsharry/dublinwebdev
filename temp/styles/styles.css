@@ -297,9 +297,14 @@ background-color:transparent !important;
     float: right;
   }
 
-  .navbar-collapse.transparent {
-    background-color: transparent !important;
+  .transparent > ul > li {
+    background-color:white !important;
   }
+
+    a.navlink {
+    color: #5ea5d6
+  }
+
 
   .header .button{
     margin-bottom: 10px;
@@ -1070,7 +1075,11 @@ background-position: center -100px;
 .blog .thumbnail{
     padding: 0;
     border: 0;
+    margin-bottom: 80px;
   }
+#lastblog {
+  margin-bottom: 25px;
+}
 
   .myhead {text-align:center;
   background-color:transparent;
