@@ -1185,6 +1185,7 @@ transform:scaleY(-1);
 
 .footer-first__paragraph{
     font-size: 15px;
+    padding-right: 3px;
     color: #cecece;
     margin-bottom: 20px;
   }
@@ -2416,4 +2417,11 @@ body{
 
 .custom-shape-divider-top-1674937317 .shape-fill {
   fill: #FFFFFF;
+}
+
+#contact-submit {
+  background-color: lightgrey !important;
+  color: black !important; 
+  border-radius: 4px;
+  margin-top: 15px;
 }
