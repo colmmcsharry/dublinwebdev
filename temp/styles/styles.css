@@ -417,7 +417,7 @@ background-color:transparent !important;
 
 .service__paragraph{
     font-size: 15px;
-    color: #8a8a8a;
+    color: #303030
   }
 
 .service .gutters-40.row{
@@ -500,7 +500,7 @@ background-color:transparent !important;
 
 .page-section__paragraph{
     font-size: 16px;
-    color: #7d7d7d;
+    color: #535353;
     max-width: 590px;
     margin-right: auto;
     margin-left: auto;
@@ -1341,6 +1341,7 @@ font-family:Poppins}
   text-align:center;
   margin-bottom:100px;
   color:white;
+  margin-top: 100px;
 }
 
 .aboutdivider {
@@ -1682,7 +1683,10 @@ width: 150px;
 }
 
 
-
+#contactpagesection {
+  display:grid;
+  place-items:center;
+}
   
   
   
@@ -1706,12 +1710,15 @@ width: 150px;
     place-items:flex-start;
   }
   
-
+  p.form-p {
+    padding-right:5px;
+  }
   
   #gridwrapper  {
     padding-left:0vw;
   padding-right:0vw;
     display:block;}
+
 }
 
 
@@ -2354,4 +2361,46 @@ body{
 
 .bonkerslink {
  color:inherit;
+}
+
+.custom-shape-divider-bottom-1674937102 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1674937102 svg {
+  position: relative;
+  display: block;
+  width: calc(222% + 1.3px);
+  height: 127px;
+}
+
+.custom-shape-divider-bottom-1674937102 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-top-1674937317 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1674937317 svg {
+  position: relative;
+  display: block;
+  width: calc(222% + 1.3px);
+  height: 127px;
+}
+
+.custom-shape-divider-top-1674937317 .shape-fill {
+  fill: #FFFFFF;
 }
