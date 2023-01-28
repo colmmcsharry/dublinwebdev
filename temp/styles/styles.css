@@ -297,6 +297,10 @@ background-color:transparent !important;
     float: right;
   }
 
+  .navbar-collapse.transparent {
+    background-color: transparent !important;
+  }
+
   .header .button{
     margin-bottom: 10px;
   }
