@@ -178,8 +178,11 @@ body.dark-mode .header__content__title {
     body.dark-mode #header--bg:after{
         background-color:rgba(0, 0, 0, .37);
     }
-
 }  
+
+body.dark-mode .contactpglist > li > a {
+    color:var(--verylightblue)
+}
 
 body.dark-mode .page-section__title {
     color:white;
