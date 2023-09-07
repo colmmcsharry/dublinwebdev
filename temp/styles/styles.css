@@ -2441,7 +2441,7 @@ section.blog {
     display: grid;
     grid-gap: 8rem;
     grid-template-columns: 1fr 1fr;
-    padding: 0 5rem;
+    padding: 0 8rem;
   }
     
 }
