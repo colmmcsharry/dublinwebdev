@@ -275,7 +275,9 @@ background-color:transparent !important;
 
 
 
-
+#slang {
+  max-width: 100%
+}
 
 
 
@@ -1572,16 +1574,14 @@ width: 150px;
   font-size:2.6rem;
   }
   
-  #gridwrapper {
+  .gridwrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 10em;
     text-align: left;
     align-items:center;
     padding:2rem;
     padding-left:6vw;
     padding-right:6vw;
-  
   }
   
   #right {
@@ -1624,12 +1624,7 @@ width: 150px;
     width: 14%;
     height:36%;
   }
-  
-  .ipadwrapper{}
-  .innerwrapper {}
-  .phonewrapper {}
-  
-  
+    
   .inner, .phone, .ipad {
     animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
@@ -1681,22 +1676,6 @@ width: 150px;
   /*image transitions ends*/
   
   
-  
-@media screen and (max-width: 850px) {
-
-  #gridwrapper {
-    display: grid;
-    grid-template-columns: 3fr 5fr;
-  grid-gap:0px;
-    text-align: left;
-    align-items:center;
-    padding:3rem;
-    padding-left:6vw;
-    padding-right:2vw;
-  }
-}
-
-
 #contactpagesection {
   display:grid;
   place-items:center;
@@ -1706,7 +1685,7 @@ width: 150px;
   
   @media screen and (max-width: 520px) {
 
-  #gridwrapper{padding:0 3vw;
+  .gridwrapper{padding:0 3vw;
   }
 
  #right {margin-top:70px;}
@@ -1728,11 +1707,10 @@ width: 150px;
     padding-right:5px;
   }
   
-  #gridwrapper  {
+  .gridwrapper  {
     padding-left:0vw;
   padding-right:0vw;
     display:block;}
-
 }
 
 
@@ -2142,13 +2120,9 @@ margin-bottom:30px;
 
 #servpagecontainer .thumbnail {
   border-radius:15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
  }
 
- #servpagecontainer .thumbnail:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 .aboutcontainer {
   max-width:800px;
@@ -2173,8 +2147,6 @@ margin-bottom:30px;
 .navbar {max-width:99vw;
 }
 
-/* #servcontainer {max-width:79vw !important;
-border:5px solid red;} */
 
 .container {
   max-width:96vw !important;
@@ -2193,7 +2165,7 @@ border:5px solid red;} */
   margin:0 auto;
 }
 
-#frontpageprojwrap {margin-bottom:150px;}
+#frontpageprojwrap {margin-bottom:100px;}
 
 
 /* #moblightswitch {
@@ -2432,5 +2404,44 @@ section.blog {
   margin-bottom: 30px;
 }
 
-#contactpagesection {
+@media screen and (min-width: 1000px) {
+
+  .gridwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10em;
+    text-align: left;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+    
+}
+
+
+  .gridwrapper.even {
+  direction: rtl;
+}
+
+
+/* id gridwrapper is just for the homepage one */
+ #gridwrapper {
+    display: grid;
+    text-align: left;
+    align-items:center;
+    padding:2rem;
+    padding-left:3vw;
+    padding-right:3vw;
+  }
+
+  @media screen and (min-width: 1000px) {
+
+  #gridwrapper {
+    display: grid;
+    grid-gap: 8rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+  }
+    
 }
