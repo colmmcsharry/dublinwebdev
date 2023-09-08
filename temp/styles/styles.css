@@ -1561,9 +1561,9 @@ width: 150px;
   
   .projwrap {display:block;
    text-align:center; 
-   margin-bottom:300px;
-
+   margin-bottom:120px;
   }
+
   
   
   .projtitle {
@@ -1583,6 +1583,8 @@ width: 150px;
     padding-left:6vw;
     padding-right:6vw;
   }
+
+  
   
   #right {
     position:relative;
@@ -2422,6 +2424,10 @@ section.blog {
 
   .gridwrapper.even {
   direction: rtl;
+}
+
+.gridwrapper.even p {
+  direction: ltr;
 }
 
 
