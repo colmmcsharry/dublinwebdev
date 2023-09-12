@@ -77,13 +77,6 @@ html,body {
   height: 100%;
 }
 
-.slang {
-  position:absolute;
-height: 100%;
-width: 100%;
-max-width: 100%;
-}
-
 
 
 
@@ -1581,7 +1574,7 @@ width: 150px;
 
   
   
-  #right {
+  #right, .slangright {
     position:relative;
     align-items:center;
   }
@@ -2478,40 +2471,68 @@ max-width: 100%;
 }
 
 .slangright {
-  @media screen and (max-width: 370px) {
+  @media screen and (max-width: 400px) {
     width: 100vw !important;
     left: -25px;
   }
 }
 
 .slangleft {
-  @media screen and (max-width: 370px) {
-    padding-right: 30px;
+  @media screen and (max-width: 400px) {
+    padding-right: 0px;
   }
 }
 
 .slanggrid {
   gap: 2em;
-  display: grid;
-  grid-template-rows: 5fr 2fr;
+  display: block;
+  /* grid-template-rows: 5fr 2fr; */
+
+  @media screen and (min-width: 370px) {
+    /* grid-template-rows: 6fr 3fr */
+  }
 }
 
 @media screen and (min-width: 450px) {
   .slanggrid {
-    grid-template-rows: 5fr 4fr
+    /* grid-template-rows: 5fr 4fr */
   }
 }
 
 @media screen and (min-width: 700px) {
   .slanggrid {
-    grid-template-rows: 1fr 1fr
+    /* grid-template-rows: 1fr 1fr */
   }
 }
 
 @media screen and (min-width: 1000px) {
   .slanggrid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: none !important;
   }
 }
+
+.slangwrap {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .slangwrap {
+  padding: 1.5rem;
+  }
+
+  img.slang {
+    position:absolute;
+width: 500px !important;
+height: 500px !important;
+bottom: 0rem;
+  /* max-width: 500px;
+  max-height: 500px; */
+  }
+}
+
 
