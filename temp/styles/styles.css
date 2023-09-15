@@ -2535,4 +2535,19 @@ bottom: 0rem;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  img.slang {
+    left: 10rem;
+    bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  img.slang {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: -8rem !important;
+  }
+}
+
 
