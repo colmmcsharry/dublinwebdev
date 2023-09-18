@@ -2277,8 +2277,8 @@ body{
 #ctabutton {
   font-weight: 700 !important;
   border-width:2px;
-  -webkit-animation: heartbeat 2s ease-in-out infinite both;
-	        animation: heartbeat 2s ease-in-out infinite both;
+  -webkit-animation: heartbeat 4s ease-in-out infinite both;
+	        animation: heartbeat 4s ease-in-out infinite both;
 }
 
 @-webkit-keyframes heartbeat {
