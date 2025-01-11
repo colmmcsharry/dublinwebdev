@@ -2138,6 +2138,12 @@ margin-bottom:30px;
   transition: 0.3s;
  }
 
+ @media screen and (min-width: 1000px) {
+  #servpagecontainer .thumbnail {
+    min-height: 518px;
+  }
+ }
+
 
 .aboutcontainer {
   max-width:800px;
