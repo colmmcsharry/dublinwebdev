@@ -2051,16 +2051,23 @@ direction: ltr;
 
 .blogpic {
   border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  max-height: 200px;
+  object-fit: cover;
 }
 
-.blogpic {
-  border-top-right-radius:15px;
+.lastpic {
+  width: 100%;
 }
+
+
+
 
 .blog .thumbnail {
   border-radius:15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  max-height: 450px;
  }
 
  .blog .thumbnail:hover {
