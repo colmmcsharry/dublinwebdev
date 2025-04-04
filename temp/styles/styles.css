@@ -389,11 +389,6 @@ background-color:transparent !important;
     margin-bottom: 60px;
   }
 
-
-.service .thumbnail:hover .service__title{
-        color: rgba(95, 124, 218)
-      }
-
 .service .thumbnail:hover .material-icons{
         background-color: rgba(95, 124, 218);
         -webkit-box-shadow: 0px 0px 15px 0px rgba(95, 124, 218);
