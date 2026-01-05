@@ -1586,8 +1586,9 @@ width: 150px;
   padding: 30px;
   font-family:  Poppins;
   font-weight:bold;
-  color:#333333;
+  /* color:#333333; */
   font-size:2.6rem;
+  text-decoration: underline !important;
   }
   
   .gridwrapper {
