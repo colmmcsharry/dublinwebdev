@@ -108,12 +108,18 @@ svg.dark-mode .targetElement {
 .online-icon {
   height: 1em;  /* Scale with text size */
   width: auto;
-  bottom: -2px;
+  bottom: -4px;
   position: relative;
   display: inline-block;
   vertical-align: baseline;
-  margin-right: 0.05em;  /* Tighten spacing */
+  margin-right: 0.08em;  /* Tighten spacing */
   /* filter: brightness(0) invert(1); */
+
+  @media screen and (min-width: 650px) {
+    .online-icon {
+      bottom: -2px;
+    }
+  }
 }
 
 .logocontainer {
