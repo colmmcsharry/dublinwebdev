@@ -171,12 +171,18 @@ body.dark-mode .projwrap {
 }
 
 body.dark-mode .header__content__title {
-    color: var(--verylightblue)}
+    color: #103764;
+}
+
+/* Keep consistent overlay in dark mode */
+body.dark-mode #header--bg:after{
+    background-color:rgba(0, 0, 0, 0.05);
+}
 
 @media screen and (min-width:450px) {
 
     body.dark-mode #header--bg:after{
-        background-color:rgba(0, 0, 0, .37);
+        background-color:rgba(0, 0, 0, 0.05);
     }
 }  
 
@@ -216,9 +222,7 @@ body.dark-mode #myheadertext {
 background-color:none !important
 }
 
-body.dark-mode .header__content__paragraph {
-    color:var(--verylightblue)
-}   
+
 
 
 
@@ -237,14 +241,26 @@ body.dark-mode #header--bg {
     background-size:cover;
   }
 
+  /* Keep animation in dark mode - just adjust the images */
+  body.dark-mode #header--bg::before {
+    background: url('../../assets/images/daydimmed.jpg') no-repeat;
+    background-size: cover;
+  }
+
   body.dark-mode .service__paragraph p {
       color:darkgray;
   }
 
   @media screen and (max-width:450px) {
     body.dark-mode #header--bg {
-        background: url('../../assets/images/mobnight.jpg') no-repeat;
+        background: url('../../assets/images/nightfinalmobb.jpg') no-repeat;
         background-size:cover;
+    }
+
+    /* Mobile dark mode - animate between night and day */
+    body.dark-mode #header--bg::before {
+        background: url('../../assets/images/nightfinalmobb.jpg') no-repeat;
+        background-size: cover;
     }
 
     body.dark-mode .dark-mode-button {
