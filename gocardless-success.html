@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Setup Successful - Dublin Web Dev</title>
+    <link rel="icon" type="image/png" href="assets/images/dubicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .successlogocontainer {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            background: rgb(123, 154, 200);
+            padding: 10px 15px;
+            border-radius: 20px;
+            width: fit-content;
+        }
+
+        .logopic {
+            max-width: 250px;
+            height: auto;
+        }
+
+        .success-icon {
+            width: 60px;
+            height: 60px;
+            background: #10b981;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: white;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+        h1 {
+            color: #1f2937;
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            color: #374151;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .details p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #374151;
+        }
+
+        .details strong {
+            color: #1f2937;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1f2937;
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #374151;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .logopic {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="successlogocontainer">
+            <img src="assets/images/dubtitle.png" alt="Dublin Web Dev Logo" class="logopic">
+        </div>
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+
+        <h1>Payment Setup Successful!</h1>
+        
+        <p>Thank you for setting up your payment with GoCardless. Your direct debit has been created successfully.</p>
+
+        <div class="details">
+            <p><strong>What happens next?</strong></p>
+            <p>✓ You'll receive a confirmation email shortly</p>
+            <p>✓ Your first payment will be processed as agreed</p>
+        </div>
+
+        <a href="index.html" class="btn">Return to Home</a>
+
+        <p class="footer-text">If you have any questions, feel free to contact us.</p>
+    </div>
+</body>
+</html>
+
