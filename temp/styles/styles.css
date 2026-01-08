@@ -386,7 +386,7 @@ background-color:transparent !important;
   color: #fff;
   border: 1px solid #fff;
   display: inline-block;
-  background-color: #598adb;
+  background-color: #4e7ecb;
   position: relative;
 }
 
@@ -420,8 +420,10 @@ background-color:transparent !important;
     border-radius: 30px;
     font-size: 16px;
     display: inline-block;
-    background-color: rgb(128, 173, 240);
+    background-color: #4e7ecb;
+    border: 3px solid white;
     color: #fff;
+    font-weight: 600;
     -webkit-box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
             box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
   }
@@ -1818,7 +1820,7 @@ margin-top:150px;}
 
 .projmore {
   margin: 70px auto;
-  background-color: rgb(128, 173, 240);
+  background-color: #4e7ecb;
 }
 
 
