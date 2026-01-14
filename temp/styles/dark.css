@@ -237,13 +237,13 @@ body.dark-mode .shape-fill {
 
 
 body.dark-mode #header--bg {
-    background: url('../../assets/images/nightfinal.jpg') no-repeat;
+    background: url('../../assets/images/nightime-lights.jpg') no-repeat;
     background-size:cover;
   }
 
   /* Keep animation in dark mode - just adjust the images */
   body.dark-mode #header--bg::before {
-    background: url('../../assets/images/daydimmed.jpg') no-repeat;
+    background: url('../../assets/images/daytime-landscape-fin.jpg') no-repeat;
     background-size: cover;
   }
 
@@ -253,13 +253,13 @@ body.dark-mode #header--bg {
 
   @media screen and (max-width:450px) {
     body.dark-mode #header--bg {
-        background: url('../../assets/images/nightfinalmobb.jpg') no-repeat;
+        background: url('../../assets/images/day-final-cropped-mob.jpg') no-repeat;
         background-size:cover;
     }
 
     /* Mobile dark mode - animate between night and day */
     body.dark-mode #header--bg::before {
-        background: url('../../assets/images/nightfinalmobb.jpg') no-repeat;
+        background: url('../../assets/images/night-final-cropped-mob.jpg') no-repeat;
         background-size: cover;
     }
 
