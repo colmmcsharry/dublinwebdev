@@ -242,11 +242,11 @@ margin-top:50px;}
 
   @keyframes beaconBlink {
     0%, 100% {
-      transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(.7);
       box-shadow: 0 0 4px 2px #ff4d4d;
     }
     50% {
-      transform: translate(-50%, -50%) scale(0.9);
+      transform: translate(-50%, -50%) scale(0.6);
       box-shadow: 0 0 2px 1px #ff4d4d;
     }
   }
