@@ -433,6 +433,10 @@ margin-top:50px;}
     color: #fff;
   } */
 
+  .navbar {
+    z-index: 20;
+  }
+
   .navlink {
     text-decoration: underline 0.15em rgb(94, 165, 214,0) !important;
     transition: text-decoration-color 300ms !important;
