@@ -276,7 +276,7 @@ margin-top:50px;}
       filter: brightness(.8);     /* Normal/white during day */
     }
     50% {
-      filter: brightness(0.2);  /* Dark during night */
+      filter: brightness(0.1);  /* Dark during night */
     }
   }
   
