@@ -294,6 +294,26 @@ margin-top:50px;}
         left: 110%;
       }
     }
+
+    /* Mobile - inverted timing for airplane brightness */
+    @keyframes airplaneBrightness {
+      0%, 100% {
+        filter: brightness(0.2);  /* Dark during night */
+      }
+      50% {
+        filter: brightness(.8);   /* Light during day */
+      }
+    }
+
+    /* Mobile - inverted timing for beacon visibility */
+    @keyframes beaconVisibility {
+      0%, 100% {
+        opacity: 1;  /* Visible during night */
+      }
+      50% {
+        opacity: 0;  /* Hidden during day */
+      }
+    }
   }
 
 
