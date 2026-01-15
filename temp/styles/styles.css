@@ -227,8 +227,8 @@ margin-top:50px;}
   .airplane-container::after {
     content: '';
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 1px;
+    height: 1px;
     background: #ff0000;
     border-radius: 50%;
     top: 45%;
