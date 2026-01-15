@@ -229,26 +229,45 @@ margin-top:50px;}
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 3px 1px #ff4d4d;
-    animation: beaconBlink 1s ease-in-out infinite;
+    animation: beaconBlink 1s ease-in-out infinite, beaconVisibility 12s ease-in-out infinite;
     z-index: 10;
   }
 
   @keyframes beaconBlink {
     0%, 100% {
-      opacity: 1;
       transform: translate(-50%, -50%) scale(1);
       box-shadow: 0 0 4px 2px #ff4d4d;
     }
     50% {
-      opacity: 0.2;
       transform: translate(-50%, -50%) scale(0.9);
       box-shadow: 0 0 2px 1px #ff4d4d;
+    }
+  }
+
+  /* Show beacon only during nighttime */
+  @keyframes beaconVisibility {
+    0%, 100% {
+      opacity: 0;  /* Hidden during day */
+    }
+    50% {
+      opacity: 1;  /* Visible during night */
     }
   }
   
   .airplane {
     filter: brightness(0.2);
     position: relative;
+    animation: airplaneBrightness 12s ease-in-out infinite;
+  }
+
+  /* Sync airplane brightness with background transition */
+  @keyframes airplaneBrightness {
+    0%, 100% {
+      filter: brightness(.8);     /* Normal/white during day */
+    }
+    50% {
+      filter: brightness(0.2);  /* Dark during night */
+    }
   }
   
 
