@@ -214,7 +214,13 @@ margin-top:50px;}
     bottom: 10%;
     left: -100px;
     z-index: 0;
-    animation: flyAcross 20s ease-in-out infinite;
+    animation: flyAcross 20s ease-in-out infinite alternate;
+  }
+
+  .airplane {
+    filter: brightness(0.2);
+    position: relative;
+    animation: airplaneBrightness 12s ease-in-out infinite, airplaneFlip 40s ease-in-out infinite;
   }
 
   /* Flashing beacon light on airplane */
@@ -253,11 +259,15 @@ margin-top:50px;}
       opacity: 1;  /* Visible during night */
     }
   }
-  
-  .airplane {
-    filter: brightness(0.2);
-    position: relative;
-    animation: airplaneBrightness 12s ease-in-out infinite;
+
+  /* Flip airplane direction on return journey */
+  @keyframes airplaneFlip {
+    0%, 50% {
+      transform: scaleX(1) rotate(0deg);  /* Normal direction, level flight (takeoff) */
+    }
+    50.01%, 100% {
+      transform: scaleX(-1) rotate(10deg); /* Flipped and nose down (landing) */
+    }
   }
 
   /* Sync airplane brightness with background transition */
