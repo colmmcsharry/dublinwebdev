@@ -171,7 +171,7 @@ body.dark-mode .projwrap {
 }
 
 body.dark-mode .header__content__title {
-    color: #0d2f55;
+    color: white;
 }
 
 /* Keep consistent overlay in dark mode */
@@ -179,7 +179,7 @@ body.dark-mode #header--bg:after{
     background-color:rgba(0, 0, 0, 0.05);
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:465px) {
 
     body.dark-mode #header--bg:after{
         background-color:rgba(0, 0, 0, 0.05);
@@ -251,7 +251,7 @@ body.dark-mode #header--bg {
       color:darkgray;
   }
 
-  @media screen and (max-width:450px) {
+  @media screen and (max-width:465px) {
     body.dark-mode #header--bg {
         background: url('../../assets/images/day-final-cropped-mob.jpg') no-repeat;
         background-size:cover;
@@ -303,6 +303,6 @@ body.dark-mode  #pricetitle{
   }
 
 
-/* @media screen and (max-width:450px){
+/* @media screen and (max-width:465px){
   .dark-mode-button {display:none;}
 } */

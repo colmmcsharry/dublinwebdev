@@ -144,7 +144,7 @@ button:focus{
 section {margin-bottom:50px;
 margin-top:50px;}
 
-@media screen and (max-width: 450px) 
+@media screen and (max-width: 465px) 
 {
     section {
       margin-bottom:40px;
@@ -208,6 +208,42 @@ margin-top:50px;}
     background-position-x: 50% !important;
   }
 
+  /* Airplane animation */
+  .airplane-container {
+    position: absolute;
+    bottom: 10%;
+    left: -100px;
+    z-index: 0;
+    animation: flyAcross 20s ease-in-out infinite;
+  }
+  
+
+  @keyframes flyAcross {
+    0% {
+      bottom: 30%;
+      left: -100px;
+    }
+    100% {
+      bottom: 80%;
+      left: 110%;
+    }
+  }
+
+  /* Mobile - more horizontal flight path */
+  @media screen and (max-width: 465px) {
+    @keyframes flyAcross {
+      0% {
+        bottom: 55%;
+        left: -100px;
+      }
+      100% {
+        bottom: 70%;
+        left: 110%;
+      }
+    }
+  }
+
+
   /* Animated background transition - using ::before for animation */
   #header--bg::before {
     content: '';
@@ -243,7 +279,7 @@ margin-top:50px;}
     top: 0;
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.05);
-    z-index: -1;
+    z-index: 1;
   }
 
 .header .navbar{
@@ -259,7 +295,7 @@ margin-top:50px;}
 
   .blognavbar {padding-left:10px;}
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
       .header .navbar{
         margin-bottom: 150px;
       }
@@ -273,6 +309,11 @@ margin-top:50px;}
 .header .nav li a{
     font-size: 15px;
     color: var(--whitetext);
+  }
+
+.header__content {
+    position: relative;
+    z-index: 10;
   }
 
 .header__content__title{
@@ -295,7 +336,7 @@ margin-top:50px;}
     margin-bottom: 50px;
     font-weight:600;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 465px) {
 
       color: white;
       font-weight: 600;
@@ -633,7 +674,7 @@ background-color:transparent !important;
    padding-bottom:40px;
  }  
  
- @media screen and (max-width: 450px){
+ @media screen and (max-width: 465px){
 
   .about {
     padding-top:80px;
@@ -1482,7 +1523,7 @@ font-family:Poppins}
 
 
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 465px) {
 
 
     #header--bg{
@@ -1539,7 +1580,7 @@ font-family:Poppins}
   fill: #FFFFFF;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
 
   
 
@@ -1902,7 +1943,8 @@ margin-top:0;}
     }
 
     #myheadertext {
-      z-index:-1 !important;
+      z-index:10 !important;
+      position: relative;
       margin:0 auto;
       left:50%;
       transform:translateX(-50%);
@@ -2150,7 +2192,7 @@ direction: ltr;
   border-radius:15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  max-height: 450px;
+  max-height: 465px;
  }
 
  .blog .thumbnail:hover {
@@ -2297,7 +2339,7 @@ figure {margin-bottom:30px;}
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
 
 
     .letsgo{
@@ -2350,7 +2392,7 @@ body{
   left:-43px;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:465px){
 
   .blogblob {
   
@@ -2586,7 +2628,7 @@ max-width: 100%;
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 465px) {
   .slanggrid {
     /* grid-template-rows: 5fr 4fr */
   }
